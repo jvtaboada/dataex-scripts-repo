@@ -1,1 +1,0 @@
-select * from dtx_tb_Queries_Profile
