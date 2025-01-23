@@ -1,5 +1,5 @@
 
-use DBADataEX 
+use DBADataEX;
 
 if OBJECT_ID('dtx_sp_Log_Whoisactive') is not null
 	drop table dtx_sp_Log_Whoisactive
