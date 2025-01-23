@@ -1,5 +1,5 @@
 USE DBADataEX
-go
+go;
 
 SET NOCOUNT ON
 
