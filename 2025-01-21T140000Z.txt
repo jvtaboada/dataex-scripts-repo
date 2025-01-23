@@ -1,3 +1,0 @@
-2025-01-21T14:00:00Z
-
-[Convert]::ToBase64String([IO.File]::ReadAllBytes("C:\Users\JoaoVitordeAlmeidaTa\OneDrive - DataEX\Documentos\Teste logic app\oie.sql"))
