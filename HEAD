@@ -1,0 +1,12 @@
+0000000000000000000000000000000000000000 a6871544c2237c5f897524f5db27b44e2f2a59b9 jvtaboada <joao_taboada@hotmail.com> 1737481576 -0300	commit (initial): Primeiro commit
+a6871544c2237c5f897524f5db27b44e2f2a59b9 0000000000000000000000000000000000000000 jvtaboada <joao_taboada@hotmail.com> 1737481708 -0300	Branch: renamed refs/heads/master to refs/heads/main
+0000000000000000000000000000000000000000 a6871544c2237c5f897524f5db27b44e2f2a59b9 jvtaboada <joao_taboada@hotmail.com> 1737481708 -0300	Branch: renamed refs/heads/master to refs/heads/main
+a6871544c2237c5f897524f5db27b44e2f2a59b9 05099ed737714a819e61eee6a8f189d26cbb6ebc jvtaboada <joao_taboada@hotmail.com> 1737554403 -0300	commit: testando commit pelo bash
+05099ed737714a819e61eee6a8f189d26cbb6ebc 83af079a716532d22dd26101ed9ea8d79986461d jvtaboada <joao_taboada@hotmail.com> 1737555191 -0300	commit (merge): apagando tudo
+83af079a716532d22dd26101ed9ea8d79986461d d602009cbc43422047cd56e2201522e50fdd1a94 jvtaboada <joao_taboada@hotmail.com> 1737569622 -0300	commit: Upload manual pela primeira vez n o github
+d602009cbc43422047cd56e2201522e50fdd1a94 0b9a55450510c8d5db54652fabd0750e4e3f7896 jvtaboada <joao_taboada@hotmail.com> 1737569928 -0300	pull: Merge made by the 'ort' strategy.
+0b9a55450510c8d5db54652fabd0750e4e3f7896 19ea42299ad1f5221bf6497f4fa884f682012c08 jvtaboada <joao_taboada@hotmail.com> 1737570018 -0300	commit: ajustando repo
+19ea42299ad1f5221bf6497f4fa884f682012c08 b29887f873b83f54e5042dab3210ccecec99413d jvtaboada <joao_taboada@hotmail.com> 1737570058 -0300	pull origin main: Merge made by the 'ort' strategy.
+b29887f873b83f54e5042dab3210ccecec99413d 2cc712af390bc1706fd9baaf2de205a4a25cb18b jvtaboada <joao_taboada@hotmail.com> 1737570218 -0300	pull origin main: Merge made by the 'ort' strategy.
+2cc712af390bc1706fd9baaf2de205a4a25cb18b a964b9783df7d6f12c2d4c36f927e2387f4c85bb jvtaboada <joao_taboada@hotmail.com> 1737634179 -0300	commit: Removendo arquivos
+a964b9783df7d6f12c2d4c36f927e2387f4c85bb e6a72b6282a213252c59baeecfd2fa1eb6b969cb jvtaboada <joao_taboada@hotmail.com> 1737634381 -0300	commit (merge): Apgando tudo
