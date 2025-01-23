@@ -1,5 +1,5 @@
 USE [DBADataEX]
-GO
+GO;
 
 /****** Object:  StoredProcedure [dbo].[dtx_sp_Alert_Login_replicated]    Script Date: 9/3/2024 10:42:22 AM ******/
 SET ANSI_NULLS ON
