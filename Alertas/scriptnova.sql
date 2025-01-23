@@ -1,0 +1,2 @@
+SCRIPTnova 
+select * from testes
