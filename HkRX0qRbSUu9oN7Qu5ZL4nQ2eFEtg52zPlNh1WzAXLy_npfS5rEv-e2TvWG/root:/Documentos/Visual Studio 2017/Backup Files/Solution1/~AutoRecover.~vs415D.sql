@@ -9,3 +9,5 @@ sp_who2 549
 kill 549
 
 SELECT T0.[Component] , T0.[ID] , T0.[Counter]  FROM [dbo].[CHEN] T0 WITH (NOLOCK) ORDER BY T0.[Component],T0.[ID]
+
+select * from dtx_queries_profi
