@@ -1,4 +1,7 @@
-sp_whoisactive
+DBCC SQLPERF(LOGSPACE);
+
+sp_whoisactive;
+
 
 USE siscoob; -- Substitua pelo nome da base em análise
 GO
