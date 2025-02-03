@@ -8,4 +8,7 @@ FROM sys.master_files;
 
 DBCC SQLPERF(LOGSPACE);
 
+use siscoob
+dbcc opentran ()
+
 sp_whoisactive
