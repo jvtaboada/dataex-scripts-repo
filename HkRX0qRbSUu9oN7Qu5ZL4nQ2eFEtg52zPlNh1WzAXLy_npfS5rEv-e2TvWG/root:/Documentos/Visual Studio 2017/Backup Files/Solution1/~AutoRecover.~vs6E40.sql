@@ -1,8 +1,8 @@
 select  * 
 from [DBADataEX].[dbo].[dtx_tb_Queries_Profile] 
 with (nolock) 
-where StartTime >= GETDATE()-8 --and EndTime <= '2025-01-28 23:59:59.000' 
+where StartTime >= GETDATE()-8 and EndTime <= GETDATE()-6
 and databasename = 'siscoob'
-order by StartTime
+order by duration desc
 
-select GETDATE()-8
+select GETDATE()-6
