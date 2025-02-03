@@ -13,5 +13,5 @@ FROM sys.databases
 WHERE name = 'siscoob';
 
 
-use bdControle_de_Backup
+use bdControle_de_Backup;
 exec sp_backups_s 'siscoob',2
