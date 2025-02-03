@@ -6,17 +6,11 @@ DBCC Opentran()
 select @@VERSION
 
 SELECT 
-    r.session_id,
-    r.start_time,
-    r.status,
-    r.command,
-    r.wait_type,
-    r.wait_time,
-    r.blocking_session_id,
-    DB_NAME(r.database_id) AS database_name
+    name AS file_name,
+    size * 8 / 1024 AS size_mb,
+    growth * 8 / 1024 AS growth_mb,
+    is_percent_growth
 FROM 
-    sys.dm_exec_requests r
+    sys.database_files
 WHERE 
-    r.database_id = DB_ID('siscoob')
-ORDER BY 
-    r.start_time ASC;
+    type_desc = 'LOG';
