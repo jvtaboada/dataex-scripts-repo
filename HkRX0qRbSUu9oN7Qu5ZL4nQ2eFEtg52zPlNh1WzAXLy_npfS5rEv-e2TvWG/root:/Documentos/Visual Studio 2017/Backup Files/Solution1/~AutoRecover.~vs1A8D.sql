@@ -8,6 +8,8 @@ FROM sys.master_files;
 
 DBCC SQLPERF(LOGSPACE);
 
+sp_backups_s 'siscoob'
+
 use siscoob
 dbcc opentran ()
 
