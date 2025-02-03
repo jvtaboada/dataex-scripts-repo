@@ -15,3 +15,6 @@ select top 50 DBName,FileNme,tam_gb,freespace_gb,total_gb,data from DBADataEX.db
 where DBName = 'siscoob' and FileNme = 'siscoob_log'
 order by data desc
  
+ 
+
+select * from DBADataEX.
