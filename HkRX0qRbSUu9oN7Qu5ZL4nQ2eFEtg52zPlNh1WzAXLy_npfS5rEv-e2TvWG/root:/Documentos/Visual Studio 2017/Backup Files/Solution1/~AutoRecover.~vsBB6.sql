@@ -1,9 +1,9 @@
 select  * 
 from [DBADataEX].[dbo].[dtx_tb_Queries_Profile] 
 with (nolock) 
-where StartTime >= '2025-02-02 15:30:00.757'
+where StartTime >= '2025-03-02 15:30:00.757'
 and databasename = 'siscoob'
-and textdata like 'exec sp_API_VFB_Reservas_Notificar_U%'
+--and textdata like 'exec sp_API_VFB_Reservas_Notificar_U%'
 order by starttime desc
 
 exec sp_Rel_Cadastro_de_Faturas_Analitico @in_empCodigo=0,@in_hotCodigo=0,@in_da=1,@in_normal=1,@in_DTCadastroIni='2025-02-01 00:00:00',@in_DTCadastroFinal='2025-02-03 00:00:00'
