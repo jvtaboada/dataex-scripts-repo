@@ -9,3 +9,4 @@ SELECT
 	where f.physical_name like 'H:%'
 	order by 4 desc
 
+sp_helptext sp_API_VFB_Logs_C
