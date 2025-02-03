@@ -9,5 +9,4 @@ f.is_percent_growth, f.growth/128 as growth_MB, fg.is_default, fg.is_read_only
 FROM sys.database_files AS f WITH (NOLOCK) 
 LEFT OUTER JOIN sys.filegroups AS fg WITH (NOLOCK)
 ON f.data_space_id = fg.data_space_id
-ORDER BY f.[file_id] OPTION (RECOMPILE);
- 
+ORDER BY f.[file_id] OPTION (RECOMPILE)
