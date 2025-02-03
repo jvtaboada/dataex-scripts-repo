@@ -1,7 +1,5 @@
 DBCC SQLPERF(LOGSPACE);
 
-
-
 sp_whoisactive;
 
 USE siscoob; -- Substitua pelo nome da base em análise
@@ -13,3 +11,7 @@ recovery_model_desc AS [Modelo de Recuperação],
 log_reuse_wait_desc AS [Motivo de Espera de Log]
 FROM sys.databases
 WHERE name = 'siscoob';
+
+
+use bdControle_de_Backup
+exec sp_backups_s 'siscoob',2
