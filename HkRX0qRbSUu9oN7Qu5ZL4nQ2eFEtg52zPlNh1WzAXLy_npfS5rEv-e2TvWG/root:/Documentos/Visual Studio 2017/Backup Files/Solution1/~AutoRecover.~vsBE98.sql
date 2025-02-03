@@ -1,4 +1,1 @@
-USE [siscoob]
-GO
-DBCC SHRINKFILE (N'SisCoob_log' , 1024, TRUNCATEONLY)
-GO
+sp_whoisactive
