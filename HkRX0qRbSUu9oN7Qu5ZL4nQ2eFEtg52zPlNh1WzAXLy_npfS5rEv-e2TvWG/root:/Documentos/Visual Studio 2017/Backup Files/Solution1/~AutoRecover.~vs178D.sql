@@ -1,5 +1,4 @@
 DBCC SQLPERF(LOGSPACE);
 
-use siscoob;
-
+use siscoob
 DBCC Opentran()
