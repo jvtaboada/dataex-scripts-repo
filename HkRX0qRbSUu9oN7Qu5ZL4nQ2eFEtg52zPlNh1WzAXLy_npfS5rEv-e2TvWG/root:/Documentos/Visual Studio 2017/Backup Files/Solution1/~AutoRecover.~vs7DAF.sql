@@ -1,0 +1,5 @@
+SELECT TOP (1000) [diretorio_backups]
+      ,[diretorio_bds]
+      ,[bd]
+      ,[diretorio_full]
+  FROM [bdControle_de_Backup].[dbo].[tblConfiguracoes]
