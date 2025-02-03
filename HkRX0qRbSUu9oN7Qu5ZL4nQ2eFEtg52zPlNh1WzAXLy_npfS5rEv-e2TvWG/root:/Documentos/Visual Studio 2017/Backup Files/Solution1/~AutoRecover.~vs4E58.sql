@@ -11,11 +11,4 @@ LEFT OUTER JOIN sys.filegroups AS fg WITH (NOLOCK)
 ON f.data_space_id = fg.data_space_id
 ORDER BY f.[file_id] OPTION (RECOMPILE)
 
-
-SELECT [name], [value], value_in_use, [description]
-FROM sys.configurations
-WHERE name IN (N'automatic soft-NUMA disabled', N'backup checksum default', N'backup compression default',
-               N'clr enabled', N'cost threshold for parallelism', N'max degree of parallelism',N'min server memory (MB)',
-			   N'max server memory (MB)', N'optimize for ad hoc workloads', N'remote admin connections') 
-ORDER BY [name];
- 
+DBCC SQLPERF(LOGSPACE);
