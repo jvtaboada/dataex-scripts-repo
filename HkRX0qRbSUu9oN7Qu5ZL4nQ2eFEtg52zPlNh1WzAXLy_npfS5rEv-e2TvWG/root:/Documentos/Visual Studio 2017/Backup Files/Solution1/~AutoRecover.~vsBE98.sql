@@ -1,1 +1,3 @@
 sp_whoisactive
+
+exec sp_API_VFB_Reservas_Notificar_U @in_vfbIdentifier=N'TCR001',@in_notificar_vfb=0,@in_notificar_coob=1,@in_status=8,@in_erro_msg=N' <!doctype html> <html lang="en"> <head>   <title>Not Found</title> </head> <body>   <h1>Not Found</h1><p>The requested resource was not found on this server.</p> </body> </html> '	NULL	CBRTAPLDBPRD01	Core .Net SqlClient Data Provider	user_siscoob	170	3.10	2025-02-03 16:14:35.743	2025-02-03 16:14:38.843	CBRTAPLDBPRD01\COOBRASTUR	541949	27630	1079	siscoob	32
