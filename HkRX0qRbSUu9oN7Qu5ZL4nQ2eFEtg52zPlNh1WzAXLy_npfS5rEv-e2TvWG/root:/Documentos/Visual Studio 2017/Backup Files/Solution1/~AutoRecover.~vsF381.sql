@@ -1,4 +1,4 @@
-
+sp_whoisactive
 
 USE DBADataEX
 SELECT * FROM dtx_tb_Queries_Profile
