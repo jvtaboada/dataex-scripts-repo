@@ -8,6 +8,7 @@ AND DataBaseName = 'siscoob'
 ORDER BY Writes DESC
 
 use siscoob
-select top 1000 *
+select top 20 *
 from sys.objects
-where type = 
+where type = 'P'
+order by modify_date desc
