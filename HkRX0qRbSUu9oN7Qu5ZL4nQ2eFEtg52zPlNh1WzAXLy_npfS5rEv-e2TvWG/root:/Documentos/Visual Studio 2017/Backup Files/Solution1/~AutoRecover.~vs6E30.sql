@@ -1965,12 +1965,6 @@ BEGIN
       hotForaPrazo = @noShow_foraprazo,  
    finNoPrazo = @financeiro_NoPrazo,  
    finForaPrazo = @financeiro_ForaPrazo  
-  
-  
-  
  DROP TABLE #tempTarefas  
   
 END
-
-
-sp_whoisactive
