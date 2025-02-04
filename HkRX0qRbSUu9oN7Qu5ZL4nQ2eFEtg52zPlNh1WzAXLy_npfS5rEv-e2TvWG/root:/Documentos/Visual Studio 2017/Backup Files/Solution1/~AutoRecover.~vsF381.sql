@@ -5,5 +5,9 @@ SELECT TOP (1000) [id]
   FROM [siscoob].[dbo].[tblHoteis_Reservas_Online_Controle_VFB_Logs]
   ORDER BY dataHora desc
 
-SELECT * FROM DBADataEX.dbo.dtx_tb_Queries_Profile
-with
+USE DBADataEX
+SELECT * FROM dtx_tb_Queries_Profile
+with (nolock)
+WHERE StartTime >= '2025-04-02 00:00:00'
+AND DataBaseName = 'siscoob'
+ORDER BY Writes DESC
