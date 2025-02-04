@@ -1,2 +1,2 @@
-RESTORE HEADERONLY FROM DISK = 'Caminho_do_Arquivo.bak';
-G:\full\siscoob20250204_full
+RESTORE HEADERONLY FROM DISK = 'G:\full\siscoob20250204_full';
+RESTORE VERIFYONLY FROM DISK = 'G:\full\siscoob20250204_full';
