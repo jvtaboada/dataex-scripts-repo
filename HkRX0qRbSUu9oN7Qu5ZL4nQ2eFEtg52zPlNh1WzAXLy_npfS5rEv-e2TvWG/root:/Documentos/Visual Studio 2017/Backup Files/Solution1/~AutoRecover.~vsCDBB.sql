@@ -49,3 +49,5 @@ BEGIN
  RETURN  
   
 END;
+
+exec sp_API_VFB_Reservas_Notificar_U @in_vfbIdentifier=N'TCR001',@in_notificar_vfb=0,@in_notificar_coob=1,@in_status=8,@in_erro_msg=N' <!doctype html> <html lang="en"> <head>   <title>Not Found</title> </head> <body>   <h1>Not Found</h1><p>The requested resource was not found on this server.</p> </body> </html>'
