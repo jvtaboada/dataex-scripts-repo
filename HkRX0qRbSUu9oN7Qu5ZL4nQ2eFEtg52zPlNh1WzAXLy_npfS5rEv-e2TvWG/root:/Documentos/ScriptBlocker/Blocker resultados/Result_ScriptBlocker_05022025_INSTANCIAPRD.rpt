@@ -5279,3 +5279,176 @@ BLOCKER_PFE_BEGIN FlushSqlHandle[dm_exec_sql_text]
                               sql_handle                                                      query_hash         stmt_start  stmt_end                  sqltext
 ------ ----------- ---------- ------------------------------------------------------ -------- ------------------ ----------- ----------- ---- -------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+BLOCKER_PFE_END FlushSqlHandle[dm_exec_sql_text] 0
+ 
+BLOCKER_PFE_END SqlMonData 2025-02-05 15:06:52.213 133
+ 
+ 
+BLOCKER_PFE_BEGIN SqlMonData 2025-02-05 15:06:57.223
+ 
+BLOCKER_PFE_BEGIN sys.dm_exec_requests
+session_id blocked db_id  command                          elapsed_time cpu_time    granted_memory logical_reads        wait_time   wait_type        tran_count  reads                writes               start_time              STATUS                         connection_id                        user_id     group_id    transaction_id       request_id  plan_handle                                            sql_handle                                             nest_level  stmt_start  stmt_end    query_hash         query_plan_hash
+---------- ------- ------ -------------------------------- ------------ ----------- -------------- -------------------- ----------- ---------------- ----------- -------------------- -------------------- ----------------------- ------------------------------ ------------------------------------ ----------- ----------- -------------------- ----------- ------------------------------------------------------ ------------------------------------------------------ ----------- ----------- ----------- ------------------ ------------------
+
+BLOCKER_PFE_END sys.dm_exec_requests 0
+ 
+BLOCKER_PFE_BEGIN sys.dm_exec_cursors
+session_id  cursor_id   elapsed_time worker_time          reads                writes               dormant_duration     fetch_buffer_start ansi_position is_open fetch_status creation_time           sql_handle                                             stmt_start  stmt_end    plan_generation_num  is_async_population is_close_on_commit fetch_buffer_size
+----------- ----------- ------------ -------------------- -------------------- -------------------- -------------------- ------------------ ------------- ------- ------------ ----------------------- ------------------------------------------------------ ----------- ----------- -------------------- ------------------- ------------------ -----------------
+
+BLOCKER_PFE_END sys.dm_exec_cursors 0
+ 
+BLOCKER_PFE_BEGIN sys.dm_exec_query_memory_grants
+session_id query_cost             dop    elapsed_time wait_time_ms         sem_id requested_memory_kb  granted_memory_kb    used_memory_kb       required_memory_kb   max_used_memory_kb   ideal_memory_kb      request_time            grant_time              timeout_sec queue_id wait_order  request_id  plan_handle                                            sql_handle                                             group_id    pool_id
+---------- ---------------------- ------ ------------ -------------------- ------ -------------------- -------------------- -------------------- -------------------- -------------------- -------------------- ----------------------- ----------------------- ----------- -------- ----------- ----------- ------------------------------------------------------ ------------------------------------------------------ ----------- -----------
+
+BLOCKER_PFE_END sys.dm_exec_query_memory_grants 0
+ 
+BLOCKER_PFE_BEGIN sys.dm_os_tasks
+session_id request_id  ecid        task_state context_switches pending_io  scheduler_id
+---------- ----------- ----------- ---------- ---------------- ----------- ------------
+
+BLOCKER_PFE_END sys.dm_os_tasks 0
+ 
+BLOCKER_PFE_BEGIN sys.dm_os_waiting_tasks
+spid   blocked_spid wait_duration_ms     wait_type                        resource_description                                                                                                             ecid        block_ecid
+------ ------------ -------------------- -------------------------------- -------------------------------------------------------------------------------------------------------------------------------- ----------- -----------
+
+BLOCKER_PFE_END sys.dm_os_waiting_tasks  0
+ 
+BLOCKER_PFE_BEGIN sys.dm_tran_database_transactions
+transaction_id       db_id       time_ms     type        state       log_record_count     log_bytes_used       log_bytes_reserved   begin_time              begin_lsn                               last_lsn                                rollback_lsn
+-------------------- ----------- ----------- ----------- ----------- -------------------- -------------------- -------------------- ----------------------- --------------------------------------- --------------------------------------- ---------------------------------------
+
+BLOCKER_PFE_END sys.dm_tran_database_transactions 0
+ 
+BLOCKER_PFE_BEGIN CollectSqlHandle
+BLOCKER_PFE_END CollectSqlHandle 0
+ 
+BLOCKER_PFE_END SqlMonData 2025-02-05 15:06:57.223 0
+ 
+ 
+BLOCKER_PFE_BEGIN SqlMonData 2025-02-05 15:07:02.250
+ 
+BLOCKER_PFE_BEGIN sys.dm_exec_requests
+session_id blocked db_id  command                          elapsed_time cpu_time    granted_memory logical_reads        wait_time   wait_type        tran_count  reads                writes               start_time              STATUS                         connection_id                        user_id     group_id    transaction_id       request_id  plan_handle                                            sql_handle                                             nest_level  stmt_start  stmt_end    query_hash         query_plan_hash
+---------- ------- ------ -------------------------------- ------------ ----------- -------------- -------------------- ----------- ---------------- ----------- -------------------- -------------------- ----------------------- ------------------------------ ------------------------------------ ----------- ----------- -------------------- ----------- ------------------------------------------------------ ------------------------------------------------------ ----------- ----------- ----------- ------------------ ------------------
+
+BLOCKER_PFE_END sys.dm_exec_requests 0
+ 
+BLOCKER_PFE_BEGIN sys.dm_exec_cursors
+session_id  cursor_id   elapsed_time worker_time          reads                writes               dormant_duration     fetch_buffer_start ansi_position is_open fetch_status creation_time           sql_handle                                             stmt_start  stmt_end    plan_generation_num  is_async_population is_close_on_commit fetch_buffer_size
+----------- ----------- ------------ -------------------- -------------------- -------------------- -------------------- ------------------ ------------- ------- ------------ ----------------------- ------------------------------------------------------ ----------- ----------- -------------------- ------------------- ------------------ -----------------
+
+BLOCKER_PFE_END sys.dm_exec_cursors 0
+ 
+BLOCKER_PFE_BEGIN sys.dm_exec_query_memory_grants
+session_id query_cost             dop    elapsed_time wait_time_ms         sem_id requested_memory_kb  granted_memory_kb    used_memory_kb       required_memory_kb   max_used_memory_kb   ideal_memory_kb      request_time            grant_time              timeout_sec queue_id wait_order  request_id  plan_handle                                            sql_handle                                             group_id    pool_id
+---------- ---------------------- ------ ------------ -------------------- ------ -------------------- -------------------- -------------------- -------------------- -------------------- -------------------- ----------------------- ----------------------- ----------- -------- ----------- ----------- ------------------------------------------------------ ------------------------------------------------------ ----------- -----------
+
+BLOCKER_PFE_END sys.dm_exec_query_memory_grants 0
+ 
+BLOCKER_PFE_BEGIN sys.dm_os_tasks
+session_id request_id  ecid        task_state context_switches pending_io  scheduler_id
+---------- ----------- ----------- ---------- ---------------- ----------- ------------
+
+BLOCKER_PFE_END sys.dm_os_tasks 0
+ 
+BLOCKER_PFE_BEGIN sys.dm_os_waiting_tasks
+spid   blocked_spid wait_duration_ms     wait_type                        resource_description                                                                                                             ecid        block_ecid
+------ ------------ -------------------- -------------------------------- -------------------------------------------------------------------------------------------------------------------------------- ----------- -----------
+
+BLOCKER_PFE_END sys.dm_os_waiting_tasks  0
+ 
+BLOCKER_PFE_BEGIN sys.dm_tran_database_transactions
+transaction_id       db_id       time_ms     type        state       log_record_count     log_bytes_used       log_bytes_reserved   begin_time              begin_lsn                               last_lsn                                rollback_lsn
+-------------------- ----------- ----------- ----------- ----------- -------------------- -------------------- -------------------- ----------------------- --------------------------------------- --------------------------------------- ---------------------------------------
+
+BLOCKER_PFE_END sys.dm_tran_database_transactions 0
+ 
+BLOCKER_PFE_BEGIN CollectSqlHandle
+BLOCKER_PFE_END CollectSqlHandle 3
+ 
+BLOCKER_PFE_END SqlMonData 2025-02-05 15:07:02.253 3
+ 
+ 
+BLOCKER_PFE_BEGIN SqlMonData 2025-02-05 15:07:07.257
+ 
+BLOCKER_PFE_BEGIN sys.dm_exec_requests
+session_id blocked db_id  command                          elapsed_time cpu_time    granted_memory logical_reads        wait_time   wait_type        tran_count  reads                writes               start_time              STATUS                         connection_id                        user_id     group_id    transaction_id       request_id  plan_handle                                            sql_handle                                             nest_level  stmt_start  stmt_end    query_hash         query_plan_hash
+---------- ------- ------ -------------------------------- ------------ ----------- -------------- -------------------- ----------- ---------------- ----------- -------------------- -------------------- ----------------------- ------------------------------ ------------------------------------ ----------- ----------- -------------------- ----------- ------------------------------------------------------ ------------------------------------------------------ ----------- ----------- ----------- ------------------ ------------------
+
+BLOCKER_PFE_END sys.dm_exec_requests 0
+ 
+BLOCKER_PFE_BEGIN sys.dm_exec_cursors
+session_id  cursor_id   elapsed_time worker_time          reads                writes               dormant_duration     fetch_buffer_start ansi_position is_open fetch_status creation_time           sql_handle                                             stmt_start  stmt_end    plan_generation_num  is_async_population is_close_on_commit fetch_buffer_size
+----------- ----------- ------------ -------------------- -------------------- -------------------- -------------------- ------------------ ------------- ------- ------------ ----------------------- ------------------------------------------------------ ----------- ----------- -------------------- ------------------- ------------------ -----------------
+
+BLOCKER_PFE_END sys.dm_exec_cursors 0
+ 
+BLOCKER_PFE_BEGIN sys.dm_exec_query_memory_grants
+session_id query_cost             dop    elapsed_time wait_time_ms         sem_id requested_memory_kb  granted_memory_kb    used_memory_kb       required_memory_kb   max_used_memory_kb   ideal_memory_kb      request_time            grant_time              timeout_sec queue_id wait_order  request_id  plan_handle                                            sql_handle                                             group_id    pool_id
+---------- ---------------------- ------ ------------ -------------------- ------ -------------------- -------------------- -------------------- -------------------- -------------------- -------------------- ----------------------- ----------------------- ----------- -------- ----------- ----------- ------------------------------------------------------ ------------------------------------------------------ ----------- -----------
+
+BLOCKER_PFE_END sys.dm_exec_query_memory_grants 0
+ 
+BLOCKER_PFE_BEGIN sys.dm_os_tasks
+session_id request_id  ecid        task_state context_switches pending_io  scheduler_id
+---------- ----------- ----------- ---------- ---------------- ----------- ------------
+
+BLOCKER_PFE_END sys.dm_os_tasks 0
+ 
+BLOCKER_PFE_BEGIN sys.dm_os_waiting_tasks
+spid   blocked_spid wait_duration_ms     wait_type                        resource_description                                                                                                             ecid        block_ecid
+------ ------------ -------------------- -------------------------------- -------------------------------------------------------------------------------------------------------------------------------- ----------- -----------
+
+BLOCKER_PFE_END sys.dm_os_waiting_tasks  0
+ 
+BLOCKER_PFE_BEGIN sys.dm_tran_database_transactions
+transaction_id       db_id       time_ms     type        state       log_record_count     log_bytes_used       log_bytes_reserved   begin_time              begin_lsn                               last_lsn                                rollback_lsn
+-------------------- ----------- ----------- ----------- ----------- -------------------- -------------------- -------------------- ----------------------- --------------------------------------- --------------------------------------- ---------------------------------------
+
+BLOCKER_PFE_END sys.dm_tran_database_transactions 0
+ 
+BLOCKER_PFE_BEGIN CollectSqlHandle
+BLOCKER_PFE_END CollectSqlHandle 0
+ 
+BLOCKER_PFE_END SqlMonData 2025-02-05 15:07:07.277 20
+ 
+ 
+BLOCKER_PFE_BEGIN SqlMonData 2025-02-05 15:07:12.293
+ 
+BLOCKER_PFE_BEGIN sys.dm_exec_requests
+session_id blocked db_id  command                          elapsed_time cpu_time    granted_memory logical_reads        wait_time   wait_type        tran_count  reads                writes               start_time              STATUS                         connection_id                        user_id     group_id    transaction_id       request_id  plan_handle                                            sql_handle                                             nest_level  stmt_start  stmt_end    query_hash         query_plan_hash
+---------- ------- ------ -------------------------------- ------------ ----------- -------------- -------------------- ----------- ---------------- ----------- -------------------- -------------------- ----------------------- ------------------------------ ------------------------------------ ----------- ----------- -------------------- ----------- ------------------------------------------------------ ------------------------------------------------------ ----------- ----------- ----------- ------------------ ------------------
+
+BLOCKER_PFE_END sys.dm_exec_requests 0
+ 
+BLOCKER_PFE_BEGIN sys.dm_exec_cursors
+session_id  cursor_id   elapsed_time worker_time          reads                writes               dormant_duration     fetch_buffer_start ansi_position is_open fetch_status creation_time           sql_handle                                             stmt_start  stmt_end    plan_generation_num  is_async_population is_close_on_commit fetch_buffer_size
+----------- ----------- ------------ -------------------- -------------------- -------------------- -------------------- ------------------ ------------- ------- ------------ ----------------------- ------------------------------------------------------ ----------- ----------- -------------------- ------------------- ------------------ -----------------
+
+BLOCKER_PFE_END sys.dm_exec_cursors 0
+ 
+BLOCKER_PFE_BEGIN sys.dm_exec_query_memory_grants
+session_id query_cost             dop    elapsed_time wait_time_ms         sem_id requested_memory_kb  granted_memory_kb    used_memory_kb       required_memory_kb   max_used_memory_kb   ideal_memory_kb      request_time            grant_time              timeout_sec queue_id wait_order  request_id  plan_handle                                            sql_handle                                             group_id    pool_id
+---------- ---------------------- ------ ------------ -------------------- ------ -------------------- -------------------- -------------------- -------------------- -------------------- -------------------- ----------------------- ----------------------- ----------- -------- ----------- ----------- ------------------------------------------------------ ------------------------------------------------------ ----------- -----------
+
+BLOCKER_PFE_END sys.dm_exec_query_memory_grants 0
+ 
+BLOCKER_PFE_BEGIN sys.dm_os_tasks
+session_id request_id  ecid        task_state context_switches pending_io  scheduler_id
+---------- ----------- ----------- ---------- ---------------- ----------- ------------
+
+BLOCKER_PFE_END sys.dm_os_tasks 0
+ 
+BLOCKER_PFE_BEGIN sys.dm_os_waiting_tasks
+spid   blocked_spid wait_duration_ms     wait_type                        resource_description                                                                                                             ecid        block_ecid
+------ ------------ -------------------- -------------------------------- -------------------------------------------------------------------------------------------------------------------------------- ----------- -----------
+
+BLOCKER_PFE_END sys.dm_os_waiting_tasks  0
+ 
+BLOCKER_PFE_BEGIN sys.dm_tran_database_transactions
+transaction_id       db_id       time_ms     type        state       log_record_count     log_bytes_used       log_bytes_reserved   begin_time              begin_lsn                               last_lsn                                rollback_lsn
+-------------------- ----------- ----------- ----------- ----------- -------------------- -------------------- -------------------- ----------------------- --------------------------------------- --------------------------------------- ---------------------------------------
+
