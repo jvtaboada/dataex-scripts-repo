@@ -1,0 +1,3 @@
+sp_whoisactive
+
+kill 
