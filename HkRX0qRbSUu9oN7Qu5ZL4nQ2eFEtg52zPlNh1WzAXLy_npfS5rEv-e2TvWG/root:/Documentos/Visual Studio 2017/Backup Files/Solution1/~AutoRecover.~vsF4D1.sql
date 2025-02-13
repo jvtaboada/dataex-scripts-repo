@@ -1,6 +1,6 @@
 Use DBADataEX;
 
-DECLARE @HtmlOutput VARCHAR(MAX);
+DECLARE @HtmlOutput VARCHAR(MAX), @Header VARCHAR(4000);
 
 SELECT 
 			[Nm_Server] [Server],
@@ -35,7 +35,7 @@ SELECT
 			FROM [dbo].[dtx_tb_CheckList_Database_Growth_Email]
 			WHERE [Nm_Server] IS NULL		) A	
 
-			SET @Header = REPLACE(@Header_Default,'HEADERTEXT','TOP 10 - Crescimento das Bases');				
+			SET @Header = 'TOP 10 - Crescimento das Bases';				
 			  	
 	
 	EXEC dbo.dtx_sp_Export_Table_HTML_Output
