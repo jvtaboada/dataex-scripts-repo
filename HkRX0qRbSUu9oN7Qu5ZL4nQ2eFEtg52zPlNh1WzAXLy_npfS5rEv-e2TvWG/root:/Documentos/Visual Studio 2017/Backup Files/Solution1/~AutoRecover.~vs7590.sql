@@ -1,20 +1,9 @@
-sp_whoisactive
-
-use DBADataEX
-go
-declare @dia_ant as char(8)
-select @dia_ant = convert(varchar, getdate()-1, 112)	
-select B.name,
-A.err_timestamp,
-a.err_severity,
-a.err_number,
-a.username,
-a.database_id,
-replace(replace(a.err_message, char(13),''), char(10), '') as err_message,
-replace(replace(a.sql_text, char(13),''), char(10), '') as sql_text,
-a.client_hostname,
-Dt_Error
-from dbo.[dtx_tb_Log_DB_Error] A (nolock)
-join sys.databases B (nolock) on A.database_id = B.database_id
-where err_timestamp >= @dia_ant --and err_timestamp < '20210922'
-order by err_timestamp
+SELECT DISTINCT vs.volume_mount_point, vs.file_system_type, vs.logical_volume_name, 
+CONVERT(DECIMAL(18,2), vs.total_bytes/1073741824.0) AS [Total Size (GB)],
+CONVERT(DECIMAL(18,2), vs.available_bytes/1073741824.0) AS [Available Size (GB)],  
+CONVERT(DECIMAL(18,2), vs.available_bytes * 1. / vs.total_bytes * 100.) AS [Space Free %],
+vs.supports_compression, vs.is_compressed, 
+vs.supports_sparse_files, vs.supports_alternate_streams
+FROM sys.master_files AS f WITH (NOLOCK)
+CROSS APPLY sys.dm_os_volume_stats(f.database_id, f.[file_id]) AS vs 
+ORDER BY vs.volume_mount_point OPTION (RECOMPILE);
