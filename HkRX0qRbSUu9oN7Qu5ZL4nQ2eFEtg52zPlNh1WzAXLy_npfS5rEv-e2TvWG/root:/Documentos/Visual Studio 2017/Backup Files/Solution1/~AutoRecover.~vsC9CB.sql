@@ -1,6 +1,6 @@
-sp_whoisactive
+sp_whoisactive;
 
-use siscoob
+use siscoob;
 
 SELECT 
     dbschemas.[name] AS SchemaName, 
@@ -13,5 +13,3 @@ JOIN sys.schemas dbschemas ON dbtables.[schema_id] = dbschemas.[schema_id]
 JOIN sys.indexes AS dbindexes ON dbindexes.[object_id] = indexstats.[object_id] AND indexstats.index_id = dbindexes.index_id
 WHERE indexstats.avg_fragmentation_in_percent > 30
 ORDER BY indexstats.avg_fragmentation_in_percent DESC;
-
-
