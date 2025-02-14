@@ -11,3 +11,9 @@ SELECT j.name
 
   select top 5  * from dtx_tb_Queries_Profile
   order by StartTime desc;
+
+  select * from dtx_tb_Queries_Profile
+  WHERE StartTime >= '2025-01-01 00:00:00.000'
+  AND TextData like '%REBUILD%'
+  AND TextData like '%REORGANIZE%'
+  
