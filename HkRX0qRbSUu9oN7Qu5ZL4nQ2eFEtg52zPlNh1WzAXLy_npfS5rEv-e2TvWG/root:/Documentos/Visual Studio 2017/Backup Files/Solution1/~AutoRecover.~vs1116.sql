@@ -7,7 +7,7 @@ SELECT j.name
       AND s.command LIKE '%dtx_sp_Alert_Index_Fragmentation%'
   );
 
-  use DBADataEX
+  use DBADataEX;
 
   select top 5  * from dtx_tb_Queries_Profile
-  order by StartTime desc
+  order by StartTime desc;
