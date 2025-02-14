@@ -13,4 +13,3 @@ SELECT j.name
   WHERE StartTime >= '2025-01-01 00:00:00.000'
   AND TextData like '%REBUILD%'
   AND TextData like '%REORGANIZE%'
-  
