@@ -1,3 +1,4 @@
+-- PROCURANDO JOBS
 SELECT j.name 
   FROM msdb.dbo.sysjobs AS j
   WHERE EXISTS 
@@ -7,11 +8,7 @@ SELECT j.name
       AND s.command LIKE '%dtx_sp_Alert_Index_Fragmentation%'
   );
 
-  use DBADataEX;
-
-  select top 5  * from dtx_tb_Queries_Profile
-  order by StartTime desc;
-
+  -- FILTRAR ULTIMAS MANUTENCOES
   select * from dtx_tb_Queries_Profile
   WHERE StartTime >= '2025-01-01 00:00:00.000'
   AND TextData like '%REBUILD%'
