@@ -4,5 +4,10 @@ SELECT j.name
   (
     SELECT 1 FROM msdb.dbo.sysjobsteps AS s
       WHERE s.job_id = j.job_id
-      AND s.command LIKE '%INDICE%'
+      AND s.command LIKE '%dtx_sp_Alert_Index_Fragmentation%'
   );
+
+  use DBADataEX
+
+  select top 5  * from dtx_tb_Queries_Profile
+  order by StartTime desc
