@@ -12,7 +12,7 @@ SELECT
     i.is_unique AS Is_Unique,
     i.is_primary_key AS Is_Primary_Key,
     i.is_unique_constraint AS Is_Unique_Constraint
-FROM sys.dm_db_index_physical_stats (DB_ID('PCFINT_MLDJG_PRD'), NULL, NULL, NULL, 'DETAILED') ps -- Alterar o nome da base dentro do DB_ID('nome-da-base'
+FROM sys.dm_db_index_physical_stats (DB_ID('siscoob'), NULL, NULL, NULL, 'DETAILED') ps -- Alterar o nome da base dentro do DB_ID('nome-da-base'
 INNER JOIN sys.indexes i
     ON ps.object_id = i.object_id AND ps.index_id = i.index_id
 INNER JOIN sys.objects o
