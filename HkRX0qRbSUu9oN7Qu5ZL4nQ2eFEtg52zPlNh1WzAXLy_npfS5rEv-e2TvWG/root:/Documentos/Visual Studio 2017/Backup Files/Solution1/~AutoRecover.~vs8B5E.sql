@@ -1,4 +1,4 @@
-USE bdcrm
+USE Zendesk;
 
 SELECT 
     DB_NAME(ps.database_id) AS DatabaseName,
