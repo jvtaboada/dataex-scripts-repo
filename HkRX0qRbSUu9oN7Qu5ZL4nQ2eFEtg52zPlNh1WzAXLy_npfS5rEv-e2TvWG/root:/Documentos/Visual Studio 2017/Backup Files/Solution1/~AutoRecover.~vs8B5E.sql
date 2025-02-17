@@ -1,4 +1,4 @@
-USE SISCOOB
+USE bdcrm
 
 SELECT 
     DB_NAME(ps.database_id) AS DatabaseName,
@@ -14,4 +14,6 @@ JOIN sys.indexes AS i
     AND ps.index_id = i.index_id
 WHERE ps.index_id > 0  -- Exclui heaps (tabelas sem índice clustered)
 AND ps.avg_fragmentation_in_percent > 30
+AND ps.page_count > 999
 ORDER BY ps.avg_fragmentation_in_percent DESC;
+
