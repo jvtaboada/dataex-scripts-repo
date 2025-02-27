@@ -1,0 +1,1 @@
+sp_Job_Hoteis_Negociacoes_Carteira null
