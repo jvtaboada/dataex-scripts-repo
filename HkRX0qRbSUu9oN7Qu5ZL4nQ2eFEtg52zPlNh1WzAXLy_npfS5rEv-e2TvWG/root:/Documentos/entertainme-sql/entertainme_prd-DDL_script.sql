@@ -475,10 +475,11 @@ GRANT ALL ON TABLE anime.tb_anime_interaction TO desenvolvimento;
 -- DROP TABLE anime.tb_anime_interaction_status;
 
 CREATE TABLE anime.tb_anime_interaction_status (
+	id serial4 	PRIMARY KEY,
 	id_anime int4 NOT NULL,
 	id_user int4 NOT NULL,
 	status int4 NOT NULL,
-	CONSTRAINT tb_anime_interaction_status_pkey PRIMARY KEY (id_anime, id_user, status)
+	CONSTRAINT tb_anime_interaction_status_pkey PRIMARY KEY (id)
 );
 
 -- Permissions
