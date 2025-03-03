@@ -522,6 +522,7 @@ CREATE TABLE anime.tb_anime_interaction_status (
 	id_anime int4 NOT NULL,
 	id_user int4 NOT NULL,
 	status int4 NOT NULL,
+	quantity_status int4 NOT NULL,
 	created_at timestamp NOT NULL,
 	updated_at timestamp NULL,
 	CONSTRAINT tb_anime_interaction_status_pkey PRIMARY KEY (id)
