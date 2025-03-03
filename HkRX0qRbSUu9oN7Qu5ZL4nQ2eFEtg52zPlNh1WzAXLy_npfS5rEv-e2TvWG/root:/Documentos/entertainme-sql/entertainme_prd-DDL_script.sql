@@ -543,7 +543,8 @@ ALTER TABLE anime.tb_anime_interaction ADD CONSTRAINT tb_anime_interaction_id_us
 
 -- anime.tb_anime_interaction_status foreign keys
 
-ALTER TABLE anime.tb_anime_interaction_status ADD CONSTRAINT tb_anime_interaction_status_id_anime_id_user_fkey FOREIGN KEY (id_anime,id_user) REFERENCES anime.tb_anime_interaction(id_anime,id_user);
+ALTER TABLE anime.tb_anime_interaction_status ADD CONSTRAINT tb_anime_interaction_status_id_anime_fkey FOREIGN KEY (id_anime) REFERENCES anime.tb_anime(id);
+ALTER TABLE anime.tb_anime_interaction_status ADD CONSTRAINT tb_anime_interaction_status_id_user_fkey FOREIGN KEY (id_user) REFERENCES auth.tb_user(id);
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
