@@ -15,6 +15,8 @@ CREATE TABLE anime.tb_anime (
 	synopsys varchar(5000) NULL,
 	episodes int4 NULL,
 	release_year int4 NULL,
+	created_at timestamp NOT NULL,
+	updated_at timestamp NULL,
 	CONSTRAINT tb_anime_pkey PRIMARY KEY (id)
 );
 CREATE INDEX idx_anime_title ON anime.tb_anime USING btree (title);
@@ -36,7 +38,8 @@ CREATE TABLE anime.tb_config_parameter (
 	id serial4 NOT NULL,
 	"key" varchar NOT NULL,
 	value varchar NOT NULL,
-	last_updated timestamp NOT NULL,
+	created_at timestamp NOT NULL,
+	updated_at timestamp NULL,
 	CONSTRAINT tb_config_parameter_pkey PRIMARY KEY (id)
 );
 
@@ -56,6 +59,8 @@ GRANT ALL ON TABLE anime.tb_config_parameter TO desenvolvimento;
 CREATE TABLE anime.tb_demographic (
 	id serial4 NOT NULL,
 	"name" varchar(50) NOT NULL,
+	created_at timestamp NOT NULL,
+	updated_at timestamp NULL,
 	CONSTRAINT tb_demographic_pkey PRIMARY KEY (id)
 );
 CREATE INDEX idx_demographic_title ON anime.tb_demographic USING btree (name);
@@ -76,6 +81,8 @@ GRANT ALL ON TABLE anime.tb_demographic TO desenvolvimento;
 CREATE TABLE anime.tb_genre (
 	id serial4 NOT NULL,
 	"name" varchar(50) NOT NULL,
+	created_at timestamp NOT NULL,
+	updated_at timestamp NULL,
 	CONSTRAINT tb_genre_pkey PRIMARY KEY (id)
 );
 CREATE INDEX idx_genre_title ON anime.tb_genre USING btree (name);
@@ -97,6 +104,8 @@ CREATE TABLE anime.tb_legal_document (
 	id serial4 NOT NULL,
 	document_type varchar(50) NOT NULL,
 	document_text text NOT NULL,
+	created_at timestamp NOT NULL,
+	updated_at timestamp NULL,
 	CONSTRAINT tb_legal_document_pkey PRIMARY KEY (id)
 );
 
@@ -116,6 +125,8 @@ GRANT ALL ON TABLE anime.tb_legal_document TO desenvolvimento;
 CREATE TABLE anime.tb_streaming (
 	id serial4 NOT NULL,
 	"name" varchar NOT NULL,
+	created_at timestamp NOT NULL,
+	updated_at timestamp NULL,
 	CONSTRAINT tb_streaming_pkey PRIMARY KEY (id)
 );
 
@@ -135,6 +146,8 @@ GRANT ALL ON TABLE anime.tb_streaming TO desenvolvimento;
 CREATE TABLE anime.tb_studio (
 	id serial4 NOT NULL,
 	"name" varchar(50) NOT NULL,
+	created_at timestamp NOT NULL,
+	updated_at timestamp NULL,
 	CONSTRAINT tb_studio_pkey PRIMARY KEY (id)
 );
 CREATE INDEX idx_studio_title ON anime.tb_studio USING btree (name);
@@ -155,6 +168,8 @@ GRANT ALL ON TABLE anime.tb_studio TO desenvolvimento;
 CREATE TABLE anime.tb_theme (
 	id serial4 NOT NULL,
 	"name" varchar(50) NOT NULL,
+	created_at timestamp NOT NULL,
+	updated_at timestamp NULL,
 	CONSTRAINT tb_theme_pkey PRIMARY KEY (id)
 );
 
@@ -174,6 +189,8 @@ GRANT ALL ON TABLE anime.tb_theme TO desenvolvimento;
 CREATE TABLE anime.tb_anime_demographic (
 	id_anime int4 NOT NULL,
 	id_demographic int4 NOT NULL,
+	created_at timestamp NOT NULL,
+	updated_at timestamp NULL,
 	CONSTRAINT tb_anime_demographic_pkey PRIMARY KEY (id_anime, id_demographic),
 	CONSTRAINT tb_anime_demographic_id_anime_fkey FOREIGN KEY (id_anime) REFERENCES anime.tb_anime(id),
 	CONSTRAINT tb_anime_demographic_id_demographic_fkey FOREIGN KEY (id_demographic) REFERENCES anime.tb_demographic(id)
@@ -195,6 +212,8 @@ GRANT ALL ON TABLE anime.tb_anime_demographic TO desenvolvimento;
 CREATE TABLE anime.tb_anime_genre (
 	id_anime int4 NOT NULL,
 	id_genre int4 NOT NULL,
+	created_at timestamp NOT NULL,
+	updated_at timestamp NULL,
 	CONSTRAINT tb_anime_genre_pkey PRIMARY KEY (id_anime, id_genre),
 	CONSTRAINT tb_anime_genre_id_anime_fkey FOREIGN KEY (id_anime) REFERENCES anime.tb_anime(id),
 	CONSTRAINT tb_anime_genre_id_genre_fkey FOREIGN KEY (id_genre) REFERENCES anime.tb_genre(id)
@@ -218,6 +237,8 @@ CREATE TABLE anime.tb_anime_image (
 	image_url varchar NULL,
 	small_image_url varchar NULL,
 	large_image_url varchar NULL,
+	created_at timestamp NOT NULL,
+	updated_at timestamp NULL,
 	CONSTRAINT tb_anime_image_pkey PRIMARY KEY (id_anime),
 	CONSTRAINT tb_anime_image_id_anime_fkey FOREIGN KEY (id_anime) REFERENCES anime.tb_anime(id)
 );
@@ -242,6 +263,8 @@ CREATE TABLE anime.tb_anime_language (
 	age_rating varchar(50) NULL,
 	synopsys varchar(5000) NULL,
 	official_translate bool NOT NULL,
+	created_at timestamp NOT NULL,
+	updated_at timestamp NULL,
 	CONSTRAINT tb_anime_language_pkey PRIMARY KEY (id_anime),
 	CONSTRAINT tb_anime_language_id_anime_fkey FOREIGN KEY (id_anime) REFERENCES anime.tb_anime(id)
 );
@@ -263,6 +286,8 @@ CREATE TABLE anime.tb_anime_streaming (
 	id_streaming int4 NOT NULL,
 	id_anime int4 NOT NULL,
 	url varchar NULL,
+	created_at timestamp NOT NULL,
+	updated_at timestamp NULL,
 	CONSTRAINT tb_anime_streaming_pkey PRIMARY KEY (id_anime, id_streaming),
 	CONSTRAINT tb_anime_streaming_id_anime_fkey FOREIGN KEY (id_anime) REFERENCES anime.tb_anime(id),
 	CONSTRAINT tb_anime_streaming_id_streaming_fkey FOREIGN KEY (id_streaming) REFERENCES anime.tb_streaming(id)
@@ -284,6 +309,8 @@ GRANT ALL ON TABLE anime.tb_anime_streaming TO desenvolvimento;
 CREATE TABLE anime.tb_anime_studio (
 	id_anime int4 NOT NULL,
 	id_studio int4 NOT NULL,
+	created_at timestamp NOT NULL,
+	updated_at timestamp NULL,
 	CONSTRAINT tb_anime_studio_pkey PRIMARY KEY (id_anime, id_studio),
 	CONSTRAINT tb_anime_studio_id_anime_fkey FOREIGN KEY (id_anime) REFERENCES anime.tb_anime(id),
 	CONSTRAINT tb_anime_studio_id_studio_fkey FOREIGN KEY (id_studio) REFERENCES anime.tb_studio(id)
@@ -305,6 +332,8 @@ GRANT ALL ON TABLE anime.tb_anime_studio TO desenvolvimento;
 CREATE TABLE anime.tb_anime_theme (
 	id_anime int4 NOT NULL,
 	id_theme int4 NOT NULL,
+	created_at timestamp NOT NULL,
+	updated_at timestamp NULL,
 	CONSTRAINT tb_anime_theme_pkey PRIMARY KEY (id_anime, id_theme),
 	CONSTRAINT tb_anime_theme_id_anime_fkey FOREIGN KEY (id_anime) REFERENCES anime.tb_anime(id),
 	CONSTRAINT tb_anime_theme_id_theme_fkey FOREIGN KEY (id_theme) REFERENCES anime.tb_theme(id)
@@ -331,6 +360,8 @@ CREATE TABLE anime.tb_custom_anime_user (
 	id_genre int4 NOT NULL,
 	custom_title varchar(200) NOT NULL,
 	custom_synopsys varchar(5000) NULL,
+	created_at timestamp NOT NULL,
+	updated_at timestamp NULL,
 	CONSTRAINT tb_custom_anime_user_pkey PRIMARY KEY (id_anime, id_user),
 	CONSTRAINT tb_custom_anime_user_id_demographic_fkey FOREIGN KEY (id_demographic) REFERENCES anime.tb_demographic(id),
 	CONSTRAINT tb_custom_anime_user_id_genre_fkey FOREIGN KEY (id_genre) REFERENCES anime.tb_genre(id),
@@ -355,6 +386,8 @@ CREATE TABLE anime.tb_total_rating_users (
 	total_rating numeric DEFAULT 0 NOT NULL,
 	total_votes int4 DEFAULT 0 NOT NULL,
 	last_updated timestamp NULL,
+	created_at timestamp NOT NULL,
+	updated_at timestamp NULL,
 	CONSTRAINT tb_total_rating_users_pkey PRIMARY KEY (id_anime),
 	CONSTRAINT tb_total_rating_users_id_anime_fkey FOREIGN KEY (id_anime) REFERENCES anime.tb_anime(id)
 );
@@ -375,6 +408,8 @@ GRANT ALL ON TABLE anime.tb_total_rating_users TO desenvolvimento;
 CREATE TABLE anime.tb_user_preference_demographic (
 	id_user int4 NOT NULL,
 	id_demographic int4 NOT NULL,
+	created_at timestamp NOT NULL,
+	updated_at timestamp NULL,
 	CONSTRAINT tb_user_preference_demographic_pkey PRIMARY KEY (id_user, id_demographic),
 	CONSTRAINT tb_user_preference_demographic_id_demographic_fkey FOREIGN KEY (id_demographic) REFERENCES anime.tb_demographic(id)
 );
@@ -395,6 +430,8 @@ GRANT ALL ON TABLE anime.tb_user_preference_demographic TO desenvolvimento;
 CREATE TABLE anime.tb_user_preference_genre (
 	id_user int4 NOT NULL,
 	id_genre int4 NOT NULL,
+	created_at timestamp NOT NULL,
+	updated_at timestamp NULL,
 	CONSTRAINT tb_user_preference_genre_pkey PRIMARY KEY (id_user, id_genre),
 	CONSTRAINT tb_user_preference_genre_id_genre_fkey FOREIGN KEY (id_genre) REFERENCES anime.tb_genre(id)
 );
@@ -415,6 +452,8 @@ GRANT ALL ON TABLE anime.tb_user_preference_genre TO desenvolvimento;
 CREATE TABLE anime.tb_user_preference_studio (
 	id_user int4 NOT NULL,
 	id_studio int4 NOT NULL,
+	created_at timestamp NOT NULL,
+	updated_at timestamp NULL,
 	CONSTRAINT tb_user_preference_studio_pkey PRIMARY KEY (id_user, id_studio),
 	CONSTRAINT tb_user_preference_studio_id_studio_fkey FOREIGN KEY (id_studio) REFERENCES anime.tb_studio(id)
 );
@@ -435,6 +474,8 @@ GRANT ALL ON TABLE anime.tb_user_preference_studio TO desenvolvimento;
 CREATE TABLE anime.tb_user_preference_theme (
 	id_user int4 NOT NULL,
 	id_theme int4 NOT NULL,
+	created_at timestamp NOT NULL,
+	updated_at timestamp NULL,
 	CONSTRAINT tb_user_preference_theme_pkey PRIMARY KEY (id_user, id_theme),
 	CONSTRAINT tb_user_preference_theme_id_theme_fkey FOREIGN KEY (id_theme) REFERENCES anime.tb_theme(id)
 );
@@ -458,6 +499,8 @@ CREATE TABLE anime.tb_anime_interaction (
 	rating_score int2 NOT NULL,
 	last_episode int4 NULL,
 	interaction_date timestamp NULL,
+	created_at timestamp NOT NULL,
+	updated_at timestamp NULL,
 	CONSTRAINT tb_anime_interaction_pkey PRIMARY KEY (id_anime, id_user)
 );
 
@@ -479,6 +522,8 @@ CREATE TABLE anime.tb_anime_interaction_status (
 	id_anime int4 NOT NULL,
 	id_user int4 NOT NULL,
 	status int4 NOT NULL,
+	created_at timestamp NOT NULL,
+	updated_at timestamp NULL,
 	CONSTRAINT tb_anime_interaction_status_pkey PRIMARY KEY (id)
 );
 
