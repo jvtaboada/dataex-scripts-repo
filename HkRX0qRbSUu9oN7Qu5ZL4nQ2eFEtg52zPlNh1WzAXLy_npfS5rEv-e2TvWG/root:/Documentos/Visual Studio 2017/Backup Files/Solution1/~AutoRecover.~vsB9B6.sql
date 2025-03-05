@@ -10,8 +10,6 @@ INSERT INTO [DBADataex].[dbo].[dtx_tb_Alert_Parameter]
            ,[Fl_Enable]
            ,[Vl_Parameter]
            ,[Ds_Metric]
-           ,[Vl_Parameter_2]
-           ,[Ds_Metric_2]
            ,[Ds_Profile_Email]
            ,[Ds_Email]
            ,[Ds_Message_Alert_ENG]
@@ -25,6 +23,16 @@ INSERT INTO [DBADataex].[dbo].[dtx_tb_Alert_Parameter]
 VALUES 
 			('SQL Server Restarted PagerDuty',
 			'dtx_sp_Alert_SQLServer_Restarted_PagerDuty',
-			1', 
-			0
-			)
+			1, 
+			0,
+			1,
+			5,
+			'Minutes',
+			'DBMAIL',--AJUSTAR PROFILE EMAIL
+			'cloud-and-data-managed-services-realtime-alerts-dataex.8c4gkzed@dataex.pagerduty.com',
+			'ALERT: SQL Server restarted in the last ###1 Minutes on Server: ',
+			'ALERTA: SQL Server Reiniciado nos últimos ###1 Minutos no Servidor: ',
+			'SQL Server Restared in the last ###1 minutes',
+			'',
+			'SQL Server Reiniciado nos últimos ###1 Minutos',
+			'')
