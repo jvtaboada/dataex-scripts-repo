@@ -35,7 +35,7 @@ Podem estourar:
 	- hotEmail / hotEmail
 	*/
 
-	SELECT
+SELECT
     hotNomeFantasia, LEN(hotNomeFantasia) AS TamanhoNomeFantasia,
     hotLogradouro, LEN(hotLogradouro) AS TamanhoLogradouro,
     hotBairro, LEN(hotBairro) AS TamanhoBairro,
@@ -48,3 +48,6 @@ WHERE
     LEN(hotBairro) > 50 OR
     LEN(hotCidade) > 100 OR
     LEN(hotEmail) > 150;
+	-- Campos com suspeita de estourar o limite na tabela destino
+
+
