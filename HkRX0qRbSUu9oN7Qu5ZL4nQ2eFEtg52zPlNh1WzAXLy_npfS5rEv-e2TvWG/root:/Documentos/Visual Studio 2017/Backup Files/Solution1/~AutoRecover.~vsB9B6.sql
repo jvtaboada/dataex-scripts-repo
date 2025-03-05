@@ -28,10 +28,12 @@ VALUES
 			1,
 			5,
 			'Minutes',
-			'DBMAIL',--AJUSTAR PROFILE EMAIL
+			'', --AJUSTAR PROFILE EMAIL
 			'cloud-and-data-managed-services-realtime-alerts-dataex.8c4gkzed@dataex.pagerduty.com',
 			'ALERT: SQL Server restarted in the last ###1 Minutes on Server: ',
+			'',
 			'ALERTA: SQL Server Reiniciado nos últimos ###1 Minutos no Servidor: ',
+			'',
 			'SQL Server Restared in the last ###1 minutes',
 			'',
 			'SQL Server Reiniciado nos últimos ###1 Minutos',
