@@ -47,7 +47,9 @@ WHERE
     LEN(hotLogradouro) > 100 OR
     LEN(hotBairro) > 50 OR
     LEN(hotCidade) > 100 OR
-    LEN(hotEmail) > 150;
+    LEN(hotEmail) > 150
+AND  sitCodigo = 1
+AND    hotCodigo NOT IN (SELECT DISTINCT hotCodigo FROM Siscoob.dbo.tblAgencia_Hoteis);
 	-- Campos com suspeita de estourar o limite na tabela destino
 
 
