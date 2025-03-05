@@ -28,8 +28,23 @@ WHERE TABLE_NAME = 'tblAgencia_Hoteis';
 
 /*
 Podem estourar: 
-	- hotNomeFantasia/ hotNome 
+	- hotNomeFantasia / hotNome 
 	- hotLogradouro / hotEndereco
 	- hotBairro / hotBairro
 	- hotCidade / hotCidade
-	- hotEmail 
+	- hotEmail / hotEmail
+	*/
+
+	SELECT
+    hotNomeFantasia, LEN(hotNomeFantasia) AS TamanhoNomeFantasia,
+    hotLogradouro, LEN(hotLogradouro) AS TamanhoLogradouro,
+    hotBairro, LEN(hotBairro) AS TamanhoBairro,
+    hotCidade, LEN(hotCidade) AS TamanhoCidade,
+    hotEmail, LEN(hotEmail) AS TamanhoEmail
+FROM Siscoob.dbo.tblHoteis
+WHERE 
+    LEN(hotNomeFantasia) > 50 OR
+    LEN(hotLogradouro) > 100 OR
+    LEN(hotBairro) > 50 OR
+    LEN(hotCidade) > 100 OR
+    LEN(hotEmail) > 150;
