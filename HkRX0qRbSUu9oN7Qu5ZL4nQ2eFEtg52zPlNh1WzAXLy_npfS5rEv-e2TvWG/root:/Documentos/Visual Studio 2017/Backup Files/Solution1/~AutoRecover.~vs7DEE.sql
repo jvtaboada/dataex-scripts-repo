@@ -5,8 +5,8 @@
   @in_tipCodigo int = 0, 
   @in_tempCodigo int = 0,
   @in_tpPlCodigo int = 0,
-  @in_dtinicial DATETIME = '01/01/2024',
-  @in_dtfinal DATETIME = '31/01/2024',
+  @in_dtinicial DATETIME = '01/02/2024',
+  @in_dtfinal DATETIME = EOMONTH(@in_dtinicial),
   @in_dtValInicial DATETIME = NULL,
   @in_dtValFinal DATETIME = NULL, 
   @in_redCodigo int = 0 ,
@@ -30,13 +30,16 @@ IF @in_hotRegCodigo = 3
  INSERT INTO @hotRegCodigo (ID)
  VALUES (4),(5)
 
-select a.*, 
-				 isnull(CASE WHEN a.tpreserva = 1 THEN ((a.diferencaRede)/a.diarias)*a.resqtdediarias              
+ /* AQUI */
+select a.*--, 
+				/*
+				isnull(CASE WHEN a.tpreserva = 1 THEN ((a.diferencaRede)/a.diarias)*a.resqtdediarias              
 						  ELSE 0
 				 END,0) AS resvlDiferenca,
 				 isnull(CASE WHEN a.tpreserva = 2 THEN (a.diferencaHcd/a.diarias)*a.resqtdediarias
 						  ELSE 0
 				 END,0) AS resvldiferencahcd
+				 */
 /* ATÉ AQUI */
 	FROM
  (
@@ -110,3 +113,4 @@ select a.*,
 	AND		(ISNULL(@in_sitCodigo,0) = 0 OR H.sitCodigo = @in_sitCodigo)   -- Acrescentado filtro chamado nº 6228 - dia 10/10/2017 Nicodemos
 	AND   (@in_tempCodigo = '0' OR (dbo.Fn_Busca_Temporada_Hotel2 (R.resDthospini,R.hotCodigo) = @in_tempCodigo)) 
 	)A
+WHERE a.diarias = 0
