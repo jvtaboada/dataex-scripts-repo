@@ -5,8 +5,8 @@
   @in_tipCodigo int = 0, 
   @in_tempCodigo int = 0,
   @in_tpPlCodigo int = 0,
-  @in_dtinicial DATETIME = '01/01/2024',
-  @in_dtfinal DATETIME = '31/12/2025',
+  @in_dtinicial DATETIME = '01/01/2025',
+  @in_dtfinal DATETIME = '31/01/2025',
   @in_dtValInicial DATETIME = NULL,
   @in_dtValFinal DATETIME = NULL, 
   @in_redCodigo int = 0 ,
@@ -114,3 +114,4 @@ select a.*--,
 	AND   (@in_tempCodigo = '0' OR (dbo.Fn_Busca_Temporada_Hotel2 (R.resDthospini,R.hotCodigo) = @in_tempCodigo)) 
 	)A
 WHERE a.diarias = 0
+ORDER BY a.resDthospini
