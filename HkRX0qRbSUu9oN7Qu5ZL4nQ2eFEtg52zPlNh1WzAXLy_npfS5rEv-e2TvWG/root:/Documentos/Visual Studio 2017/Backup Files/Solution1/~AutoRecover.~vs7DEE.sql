@@ -1,3 +1,35 @@
+ DECLARE @in_divRegional INT = 0, -- alterado dia 24/06/2016 por Rafael Bertoluci
+  @in_hotUF VARCHAR(2) = NULL, 
+  @in_hotCidade VARCHAR(50) = NULL, 	   
+  @in_hotCodigo int = 0, 	   
+  @in_tipCodigo int = 0, 
+  @in_tempCodigo int = 0,
+  @in_tpPlCodigo int = 0,
+  @in_dtinicial DATETIME = '01/01/2024',
+  @in_dtfinal DATETIME = '31/01/2024',
+  @in_dtValInicial DATETIME = NULL,
+  @in_dtValFinal DATETIME = NULL, 
+  @in_redCodigo int = 0 ,
+  @in_order int = 1,
+	@in_SomenteHoteis BIT = 1,     -- Acrescentado filtro Chamado nº 1379 - dia 01/03/2017 Jairo Schell
+	@in_hotRegCodigo INT = 0,
+	@in_sitCodigo INT = NULL    -- Acrescentado filtro chamado nº 6228 - dia 10/10/2017 Nicodemos
+
+
+DECLARE @hotRegCodigo TABLE (ID INT)
+
+IF @in_hotRegCodigo = 1
+ INSERT INTO @hotRegCodigo (ID)
+ VALUES (1)
+
+IF @in_hotRegCodigo = 2
+ INSERT INTO @hotRegCodigo (ID)
+ VALUES (2),(3)
+
+IF @in_hotRegCodigo = 3
+ INSERT INTO @hotRegCodigo (ID)
+ VALUES (4),(5)
+
 select a.*, 
 				 isnull(CASE WHEN a.tpreserva = 1 THEN ((a.diferencaRede)/a.diarias)*a.resqtdediarias              
 						  ELSE 0
