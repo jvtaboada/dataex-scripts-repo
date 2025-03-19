@@ -1,0 +1,3 @@
+Wi-Fi DataEX
+network: DataEX - Corporativo
+pwd: D@t43x2019
