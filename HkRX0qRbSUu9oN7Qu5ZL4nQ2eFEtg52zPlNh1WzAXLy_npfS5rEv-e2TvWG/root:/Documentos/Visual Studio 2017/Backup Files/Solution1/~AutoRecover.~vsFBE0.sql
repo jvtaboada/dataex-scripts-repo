@@ -1,0 +1,2 @@
+SELECT COUNT(*)
+FROM TBSGO_ReclassificacaoMensalBacen_BKP20250416_GMUD4830
