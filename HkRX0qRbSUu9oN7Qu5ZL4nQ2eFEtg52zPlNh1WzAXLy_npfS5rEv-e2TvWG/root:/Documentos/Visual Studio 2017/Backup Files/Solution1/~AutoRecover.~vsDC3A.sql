@@ -11,9 +11,13 @@ begin tran
 
 
 -- QDT de linhas alteradas = 1
-SELECT bdfgcsgo..TBSGO_ReclassificacaoMensalBacen
-
+Update bdfgcsgo..TBSGO_ReclassificacaoMensalBacen
+set CD_ReclassificacaoMensalBacenStatus = '3'
 where ID_ReclassificacaoMensalBacen = '108'
+
+SELECT CD_ReclassificacaoMensalBacenStatus 
+FROM bdfgcsgo..TBSGO_ReclassificacaoMensalBacen
+where ID_ReclassificacaoMensalBacen = '108';
 
  
 
