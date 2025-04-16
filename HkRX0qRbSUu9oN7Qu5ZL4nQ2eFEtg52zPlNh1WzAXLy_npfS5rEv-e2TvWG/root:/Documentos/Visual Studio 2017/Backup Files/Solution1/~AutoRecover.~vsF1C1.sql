@@ -1,0 +1,10 @@
+SELECT TOP (10) [id]
+      ,[subject]
+      ,[body]
+      ,[sender]
+      ,[email_date]
+      ,[instance]
+      ,[email_date1]
+      ,[email_date2]
+  FROM [dbo].[dtx_tb_alerts_emails]
+  
