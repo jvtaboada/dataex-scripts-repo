@@ -1,3 +1,6 @@
+SELECT *
+INTO TBSGO_ReclassificacaoMensalBacen_BKP20250416_GMUD4830
+FROM TBSGO_ReclassificacaoMensalBacen
 
 
--- nomenclatura BKP20250324_GMUD4762
+-- nomenclatura GMUD: BKP20250416_GMUD4830
