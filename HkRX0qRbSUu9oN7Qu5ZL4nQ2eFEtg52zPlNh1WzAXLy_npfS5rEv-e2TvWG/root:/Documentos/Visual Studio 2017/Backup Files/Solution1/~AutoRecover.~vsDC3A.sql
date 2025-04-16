@@ -5,14 +5,14 @@
 -- nomenclatura GMUD: BKP20250416_GMUD4830
 
 
+Use BDFGCSGO
 
 begin tran
 
 
-
 -- QDT de linhas alteradas = 1
-Update bdfgcsgo..TBSGO_ReclassificacaoMensalBacen
-set CD_ReclassificacaoMensalBacenStatus = '3'
+SELECT bdfgcsgo..TBSGO_ReclassificacaoMensalBacen
+
 where ID_ReclassificacaoMensalBacen = '108'
 
  
