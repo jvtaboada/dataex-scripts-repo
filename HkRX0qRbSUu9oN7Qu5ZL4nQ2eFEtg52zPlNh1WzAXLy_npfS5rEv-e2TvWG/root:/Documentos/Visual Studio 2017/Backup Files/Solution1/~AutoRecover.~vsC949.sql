@@ -16,4 +16,5 @@ SELECT TOP (10) [id]
  --WHERE id = 1;
 
  COMMIT;
- ROLLBACK
+ ROLLBACK;
+
