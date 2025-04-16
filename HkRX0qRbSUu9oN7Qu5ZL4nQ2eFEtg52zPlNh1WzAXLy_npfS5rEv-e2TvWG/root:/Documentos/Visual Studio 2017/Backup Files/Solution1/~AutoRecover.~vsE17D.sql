@@ -4,17 +4,17 @@ SELECT TOP (10) [id]
       ,[sender]
       ,[email_date]
   FROM [dbo].[dtx_tb_checklists_emails]
-  WHERE subject like '%COBRAGNFE%'
+  WHERE subject like '%SQLPRODUCAO-03%'
   order by  email_date DESC
   
 
-  
+
 Tempo de Disponibilidade do SQL Server
 
 
 
 
-Availability Time14 Dia(s) 20 Hour(s) 01 Minuto(s)
+Availability Time66 Dia(s) 09 Hour(s) 43 Minuto(s)
 
 
 
@@ -25,7 +25,7 @@ Espaço em Disco
 
 
 Drive NameTotal Size (GB)Space Used (GB)Free Space (GB)Space Used
-(%)C:1999187512394.000E:32921211765.000
+(%)C:1261081886.000D:4095824327121.000F:8187768450394.000G:4095378331293.000L:2047464158323.000
 
 
 
@@ -36,11 +36,11 @@ TOP 5 - Informações dos Arquivos de Dados (MDF e NDF)
 
 
 DatabaseLogical NameTotal Reserved (MB)Total Used (MB)Free Space (MB)Free Space
-(%)Max SizeGrowthDB_GNFEDB_GNFE_Nota_Fisc336592.00336406.56185.440.06-160.00
-MBDB_GNFE_ITFCDB_GNFE_ITFC160417.06153379.567037.504.39-110.00
-MBmsdbMSDBData147585.567735.44139850.1394.76-110.00
-MBDB_GNFEDB_GNFE_Nota_Fisc2141465.00140417.501047.500.74-110.00
-MBDB_GNFEDB_GNFE_Fila_Hist135481.00133499.561981.441.46-110.00 MB
+(%)Max SizeGrowthDBRododtrodoData3201520.062499435.50702084.5621.93-11024.00
+MBDBRodoDBRodo_PTT20221085307.00433737.75651569.2560.04-11024.00
+MBDBRodoDBRodo_PTT2023853775.50447029.81406745.6947.64-11024.00
+MBDBRodoDBRodo_PTT2024790528.00672220.38118307.6314.97-11024.00
+MBDBRodoDBRodo_PTT2021492000.00439778.1952221.8110.61-11024.00 MB
 
 
 
@@ -51,11 +51,11 @@ TOP 5 - Informações dos Arquivos de Log (LDF)
 
 
 DatabaseLogical NameTotal Reserved (MB)Total Used (MB)Free Space (MB)Free Space
-(%)Max SizeGrowthDB_GNFEDB_GNFE_Log17475.56908.5916566.9794.8020971521024.00
-MBReportServerReportServer_log10050.9428.0710022.8799.72209715216.00
-MBDB_GNFE_ITFCDB_GNFE_ITFC_log4112.6970.334042.3698.29209715210.00
-MBmsdbMSDBLog1434.5614.851419.7198.96209715210.00
-MBtempdbtemplog570.50303.03267.4746.88-110.00 MB
+(%)Max SizeGrowthDBRodolgrodoLog353995.1320833.35333161.7794.111650000100000.00
+MBtempdbtemplog50000.0013.5449986.4699.97-11024.00
+MBBServerBSuperServer_log22398.8893.9222304.9599.58-11024.00
+MBDBADataEXDBADataEX_log4227.4442.684184.7698.9920971521024.00
+MBCHANGECHANGE_log3336.0044.883291.1298.6520971521024.00 MB
 
 
 
@@ -67,8 +67,8 @@ TOP 10 - Crescimento das Bases
 
 ServerDatabaseActual Size (MB)Growth 1 Day (MB)Growth 15 Days (MB)Growth 30 Days
 (MB)Growth 60 Days
-(MB)COBRAGNFEDB_GNFE764713.50334.051610.064117.4810716.62COBRAGNFEDB_GNFE_ITFC153355.2285.35885.061754.803196.12COBRAGNFEReportServer21356.9138.56410.13805.001485.03COBRAGNFEDBADataEX1309.840.06-11.342.763.52COBRAGNFEDB_GNFE_HIST16009.930.000.00-666.97-666.97COBRAGNFEReportServerTempDB9.050.00-0.110.170.16COBRAGNFEDB_DBA0.000.000.000.000.00TOTAL
-ALL956754.45458.022893.806013.2414734.48
+(MB)SQLPRODUCAO-03DBRodo5623763.1011846.6214584.0170873.08129677.35SQLPRODUCAO-03CHANGE25093.87134.22-351.101255.674036.97SQLPRODUCAO-03BServer1225.3243.63655.44-20800.90-20942.34SQLPRODUCAO-03Auditoria554.202.1227.68-2066.50-1883.25SQLPRODUCAO-03msdb0.000.000.000.000.00SQLPRODUCAO-03DBADataEX1902.76-12.57-7.02-199.37-86.42TOTAL
+ALL5652539.2512014.0214909.0149061.98110802.31
 
 
 
@@ -80,8 +80,8 @@ TOP 10 - Crescimento das Tabelas
 
 ServerDatabaseTableActual Size (MB)Growth 1 Day (MB)Growth 15 Days (MB)Growth 30
 Days (MB)Growth 60 Days
-(MB)COBRAGNFEDB_GNFEtbl_201_nfe293383.38147.321669.501969.904811.23COBRAGNFEDB_GNFEtbl_204_nfe_prod119350.9068.25761.631511.662752.54COBRAGNFEDB_GNFE_ITFCtbl_itfc_204_nfe_prod87806.9855.43573.251137.072080.95COBRAGNFEDB_GNFEtbl_054_fila_trns_hist127821.6047.3714.69664.141757.24COBRAGNFEDB_GNFEtbl_219_nfe_trak89185.9641.56441.19910.971707.66COBRAGNFEReportServerExecutionLogStorage21349.8338.56410.13805.001485.03COBRAGNFEDB_GNFE_ITFCtbl_itfc_201_nfe37572.5322.94236.87469.53846.65COBRAGNFEDB_GNFEtbl_052_fila_trns_retr13432.144.50-274.72-190.33-55.02COBRAGNFEDB_GNFEtbl_202_nfe_evet6369.774.3246.1990.22163.73COBRAGNFEDB_GNFEtbl_064_fila_pdf_hist5193.903.44-94.14-58.260.31TOTAL
-ALL-956754.45458.022893.806013.2414734.48
+(MB)SQLPRODUCAO-03DBRodoGLTQ_DIGITALIZACOES3022.982060.541868.313022.98-5171.61SQLPRODUCAO-03DBRodoZ_PROCESSOS4869.821866.901447.162211.12298.39SQLPRODUCAO-03DBRodoGLID_IMPDOCCLIITENS85942.341045.4410484.4314342.5424507.89SQLPRODUCAO-03DBRodoGLGL_DOCUMENTOS485073.09827.964297.2810829.0816016.13SQLPRODUCAO-03DBRodoGLID_IMPLOTES120956.99506.36-821.86-2179.27-18231.46SQLPRODUCAO-03DBRodoGLID_IMPDOCCLIS198579.22452.343097.84-5576.66-11425.58SQLPRODUCAO-03DBRodoGLID_TANQUEIMPNFE31851.81449.973809.687865.095722.75SQLPRODUCAO-03DBRodoGLOP_OCORRENCIAS416683.59366.084382.698753.0315698.41SQLPRODUCAO-03DBRodoGLGV_PROCESSOITENS170455.67273.322363.214695.798398.40SQLPRODUCAO-03DBRodoGLCE_ARQUIVOENVIOSNDD450.37257.82163.97438.84-1870.32TOTAL
+ALL-5652539.2512014.0214909.0149061.98110802.31
 
 
 
@@ -92,7 +92,7 @@ TOP 10 - Utilização Arquivos Databases - Writes (09:00 - 18:00)
 
 
 DatabaseFile IDIO Stall Write (ms)Num of WritesAVG Write Stall
-(ms)DB_GNFE66913101021276.8DB_GNFE10132144197456.7DB_GNFE5103991155956.7tempdb211037312783504.0ReportServerTempDB1239349680533.5DB_GNFE25886822587752.3DB_GNFE_ITFC2162798741152.2ReportServerTempDB23795211766852.1master275535428171.8msdb211370206445331.8
+(ms)DBRodo591210815177400465.1DBRodo176707343159784764.8DBRodo226106365151979591.7tempdb1120210616946750.7tempdb4120295816818960.7tempdb3117633216818100.7tempdb5116106416778150.7tempdb7117475116747440.7tempdb6116402616747110.7tempdb8116821816737950.7
 
 
 
@@ -103,7 +103,7 @@ TOP 10 - Utilização Arquivos Databases - Reads (09:00 - 18:00)
 
 
 DatabaseFile IDIO Stall Read (ms)Num od ReadsAVG Read Stall
-(ms)DB_GNFE2300622836359.2DB_GNFE_ITFC1580021826.5DB_GNFE10230752810635521.7DB_GNFE65929992853020.8DB_GNFE84556502191420.8ReportServer136889184020.0DB_GNFE54040892041219.8DB_GNFE3304215319.8DB_GNFE1467924718.9ReportServerTempDB1360824714.5
+(ms)DBRodo59606607858951.2DBRodo1602064060719861.0DBRodo38985219305641.0DBRodo4140187315440570.9tempdb66323096976960.9tempdb86158286971470.9tempdb16227876970190.9tempdb76244716967150.9tempdb46097656964970.9tempdb56227036964520.9
 
 
 
@@ -124,7 +124,7 @@ TOP 10 - Databases Sem Backup nas últimas 16 Horas
 
 
 
-DatabaseNo problem with Backups on the last 16 Hours
+Databasemastermodelmsdb
 
 
 
@@ -135,14 +135,12 @@ TOP 10 - Backup FULL e Diferencial das Bases
 
 
 DatabaseBackup Start DateDuration (min)Recovery ModelTypeSize
-(MB)DB_GNFE2025-04-16 00:23:43262FULLFULL769923.45DB_GNFE_ITFC2025-04-16
-04:45:4048SIMPLEFULL153387.16ReportServer2025-04-16
-00:11:218FULLFULL21362.86DB_GNFE_HIST2025-04-16
-00:19:584SIMPLEFULL16050.11msdb2025-04-16
-00:02:029SIMPLEFULL7876.06DBADataEX2025-04-16
-05:33:000FULLFULL1317.10ReportServerTempDB2025-04-16
-00:19:560SIMPLEFULL13.15master2025-04-16 00:02:010SIMPLEFULL6.09DB_DBA2025-04-16
-00:19:570SIMPLEFULL3.33model2025-04-16 00:02:020FULLFULL2.83
+(MB)DBRodo2025-04-15 23:01:3014FULLDiferencial245801.37DBRodo2025-04-15
+23:01:3014FULLDiferencial245801.37CHANGE2025-04-15
+23:00:431FULLDiferencial2246.09DBADataEX2025-04-15
+23:01:080SIMPLEDiferencial1260.35BServer2025-04-15
+23:00:240FULLDiferencial754.39Auditoria2025-04-15
+23:00:070SIMPLEDiferencial116.33
 
 
 
@@ -153,8 +151,11 @@ TOP 5 - Queries em Execução a mais de 2 horas
 
 
 dd hh:mm:ss.mssDatabaseLogin NameHost NameStart TimeStatusSession IDBlocking
-Session IDWait InfoOpen Tran CountCPUReadsWritesQuery-Without Queries running
-for more than 2 hours------------
+Session IDWait InfoOpen Tran CountCPUReadsWritesQuery00 14:20:10.423masterNT
+AUTHORITY\SYSTEMSQLPRODUCAO-032025-04-15
+16:34:55suspended63-(101ms)SP_SERVER_DIAGNOSTICS_SLEEP0000EXEC
+sp_server_diagnostics 600 14:15:56.343DBRodobenner10.101.0.272025-04-15
+16:39:10sleeping2239--117211,48745SELECT NEXT VALUE FOR SEQ_GL
 
 
 
@@ -186,8 +187,86 @@ TOP 10 - Jobs que Falharam
 
 
 
-Job NameStatusExecution DateDurationSQL MessageWithout Information about failed
-Jobs----
+Job NameStatusExecution DateDurationSQL MessageAgendamento - Reporting - Gestao
+de VolumeFailed20250416 03:50:0000:00:00The job failed. The Job was invoked by
+Schedule 126 (Diário). The last step to run was step 1 (Verifica se é o
+primário).Agendamento - Reporting - Gestao de VolumeFailed20250416
+03:50:0000:00:00Executed as user: PATRUS\sqlservice. É o Servidor primário.
+[SQLSTATE 42000] (Error 50000). The step failed.DBA - Monitor
+IntegratorFailed20250416 02:35:0000:00:03The job failed. The Job was invoked by
+Schedule 257 (Recorrente). The last step to run was step 1 (Monitor Log).DBA -
+Monitor IntegratorFailed20250416 02:35:0000:00:03Executed as user:
+PATRUS\sqlservice. Transaction (Process ID 1160) was deadlocked on lock
+resources with another process and has been chosen as the deadlock victim. Rerun
+the transaction. [SQLSTATE 40001] (Error 1205). The step failed.DBA - Manutenção
+Tabelas ZFailed20250416 00:36:1700:06:41Executed as user: PATRUS\sqlservice.
+...aint "FK_21352_131516". The conflict occurred in database "DBRodo", table
+"dbo.K_Z_AGENDAMENTOERROS", column 'AGENDAMENTO'. [SQLSTATE 23000] (Error 547)
+The statement has been terminated. [SQLSTATE 01000] (Error 3621) The DELETE
+statement conflicted with the REFERENCE constraint "FK_21352_131516". The
+conflict occurred in database "DBRodo", table "dbo.K_Z_AGENDAMENTOERROS", column
+'AGENDAMENTO'. [SQLSTATE 23000] (Error 547) The statement has been terminated.
+[SQLSTATE 01000] (Error 3621) The DELETE statement conflicted with the REFERENCE
+constraint "FK_21352_131516". The conflict occurred in database "DBRodo", table
+"dbo.K_Z_AGENDAMENTOERROS", column 'AGENDAMENTO'. [SQLSTATE 23000] (Error 547)
+The statement has been terminated. [SQLSTATE 01000] (Error 3621) The DELETE
+statement conflicted with the REFERENCE constraint "FK_21352_131516". The
+conflict occurred in database "DBRodo", table "dbo.K_Z_AGENDAMENTOERROS", column
+'AGENDAMENTO'. [SQLSTATE 23000] (Error 547) The statement has been terminated.
+[SQLSTATE 01000] (Error 3621) The DELETE statement conflicted with the REFERENCE
+constraint "FK_21352_131516". The conflict occurred in database "DBRodo", table
+"dbo.K_Z_AGENDAMENTOERROS", column 'AGENDAMENTO'. [SQLSTATE 23000] (Error 547)
+The statement has been terminated. [SQLSTATE 01000] (Error 3621) The DELETE
+statement conflicted with the REFERENCE constraint "FK_21352_131516". The
+conflict occurred in database "DBRodo", table "dbo.K_Z_AGENDAMENTOERROS", column
+'AGENDAMENTO'. [SQLSTATE 23000] (Error 547) The statement has been terminated.
+[SQLSTATE 01000] (Error 3621) The DELETE statement conflicted with the REFERENCE
+constraint "FK_21352_131516". The conflict occurred in database "DBRodo", table
+"dbo.K_Z_AGENDAMENTOERROS", column 'AGENDAMENTO'. [SQLSTATE 23000] (Error 547)
+The statement has been terminated. [SQLSTATE 01000] (Error 3621) The DELETE
+statement conflicted with the REFERENCE constraint "FK_21352_131516". The
+conflict occurred in database "DBRodo", table "dbo.K_Z_AGENDAMENTOERROS", column
+'AGENDAMENTO'. [SQLSTATE 23000] (Error 547) The statement has been terminated.
+[SQLSTATE 01000] (Error 3621) The DELETE statement conflicted with the REFERENCE
+constraint "FK_21352_131516". The conflict occurred in database "DBRodo", table
+"dbo.K_Z_AGENDAMENTOERROS", column 'AGENDAMENTO'. [SQLSTATE 23000] (Error 547)
+The statement has been terminated. [SQLSTATE 01000] (Error 3621) The DELETE
+statement conflicted with the REFERENCE constraint "FK_21352_131516". The
+conflict occurred in database "DBRodo", table "dbo.K_Z_AGENDAMENTOERROS", column
+'AGENDAMENTO'. [SQLSTATE 23000] (Error 547) The statement has been terminated.
+[SQLSTATE 01000] (Error 3621) The DELETE statement conflicted with the REFERENCE
+constraint "FK_21352_131516". The conflict occurred in database "DBRodo", table
+"dbo.K_Z_AGENDAMENTOERROS", column 'AGENDAMENTO'. [SQLSTATE 23000] (Error 547)
+The statement has been terminated. [SQLSTATE 01000] (Error 3621) The DELETE
+statement conflicted with the REFERENCE constraint "FK_21352_131516". The
+conflict occurred in database "DBRodo", table "dbo.K_Z_AGENDAMENTOERROS", column
+'AGENDAMENTO'. [SQLSTATE 23000] (Error 547) The statement has been terminated.
+[SQLSTATE 01000] (Error 3621) The DELETE statement conflicted with the REFERENCE
+constraint "FK_21352_131516". The conflict occurred in database "DBRodo", table
+"dbo.K_Z_AGENDAMENTOERROS", column 'AGENDAMENTO'. [SQLSTATE 23000] (Error 547)
+The statement has been terminated. [SQLSTATE 01000] (Error 3621) The DELETE
+statement conflicted with the REFERENCE constraint "FK_21352_131516". The
+conflict occurred in database "DBRodo", table "dbo.K_Z_AGENDAMENTOERROS", column
+'AGENDAMENTO'. [SQLSTATE 23000] (Error 547) The statement has been terminated.
+[SQLSTATE 01000] (Error 3621) The DELETE statement conflicted with the REFERENCE
+constraint "FK_21352_131516". The conflict occurred in database "... The stepDBA
+- Manutenção Tabelas ZFailed20250416 00:10:0000:41:36The job failed. The Job was
+invoked by Schedule 229 (Diário). The last step to run was step 9 (Limpa
+Z_Emails).DBA - Plano de Manutenção - Índices-Estatísticas -
+22HCancelled20250415 22:53:5706:51:03Executed as user: PATRUS\sqlservice. The
+step was cancelled (stopped) as the result of a stop job request. DBA - Plano de
+Manutenção - Índices-Estatísticas - 22HCancelled20250415 22:00:0007:45:01The job
+was stopped prior to completion by User PATRUS\sqlservice. The Job was invoked
+by Schedule 233 (DIÁRIO AS 22H). The last step to run was step 6 (Reorganise +
+Estatísticas).DBA - Monitor de SessãoFailed20250415 14:15:0000:00:02The job
+failed. The Job was invoked by Schedule 249 (15 Mins). The last step to run was
+step 1 (Executar).DBA - Monitor de SessãoFailed20250415 14:15:0000:00:02Executed
+as user: PATRUS\sqlservice. DBCC execution completed. If DBCC printed error
+messages, contact your system administrator. [SQLSTATE 01000] (Message 2528)
+Warning: The join order has been enforced because a local join hint is used.
+[SQLSTATE 01000] (Message 8625) There is already an object named
+'##OUTPUT_WHOISACTIVE' in the database. [SQLSTATE 42S01] (Error 2714). The step
+failed.
 
 
 
@@ -197,40 +276,29 @@ TOP 10 - Jobs Demorados
 
 
 
-Job NameStatusExecution DateDurationSQL MessageGNFe - 316 - Tratamento de
-Retorno Servico Transmissão - envManifestoSucceeded20250416 02:36:2100:08:08O
-trabalho foi bem-sucedido. O trabalho foi invocado por Agenda 106 (Agenda
-envManifesto). A última etapa a ser executada foi 4 (Status 11 3a Vez).GNFe -
-316 - Tratamento de Retorno Servico Transmissão - envManifestoSucceeded20250416
-02:11:5100:08:00O trabalho foi bem-sucedido. O trabalho foi invocado por Agenda
-106 (Agenda envManifesto). A última etapa a ser executada foi 4 (Status 11 3a
-Vez).GNFe - 302 - Tratamento de Retorno Servico Transmissão -
-NFeCancelamentoSucceeded20250416 06:46:0000:08:00O trabalho foi bem-sucedido. O
-trabalho foi invocado por Agenda 25 (Agenda NFeCancelamento). A última etapa a
-ser executada foi 4 (Status 11 3a Vez).GNFe - 314 - Tratamento de Retorno
-Servico Transmissão - NFeConsultaDest]Succeeded20250416 06:45:5000:08:00O
-trabalho foi bem-sucedido. O trabalho foi invocado por Agenda 97 (Agenda
-NFeConsultaDest). A última etapa a ser executada foi 4 (Status 11 3a Vez).GNFe -
-315 - Tratamento de Retorno Servico Transmissão - nfeDownloadNFSucceeded20250416
-06:45:5000:08:00O trabalho foi bem-sucedido. O trabalho foi invocado por Agenda
-99 (Agenda nfeDownloadNF). A última etapa a ser executada foi 4 (Status 11 3a
-Vez).GNFe - 304 - Tratamento de Retorno Servico Transmissão -
-NfeConsultaSucceeded20250416 06:38:0000:08:00O trabalho foi bem-sucedido. O
-trabalho foi invocado por Agenda 27 (Agenda NfeConsulta). A última etapa a ser
-executada foi 4 (Status 11 3a Vez).GNFe - 303 - Tratamento de Retorno Servico
-Transmissão - NFeInutilizacaoSucceeded20250416 06:23:1000:08:00O trabalho foi
-bem-sucedido. O trabalho foi invocado por Agenda 26 (Agenda NFeInutilizacao). A
-última etapa a ser executada foi 4 (Status 11 3a Vez).MDFe - 302 - Tratamento de
-Retorno Serviço Transmissão - MDFeRecepcaoEventoSucceeded20250416
-02:42:4200:02:05O trabalho foi bem-sucedido. O trabalho foi invocado por Agenda
-158 (MDFeRecepcaoEvento). A última etapa a ser executada foi 1
-(MDFeRecepcaoEvento).MDFe - 302 - Tratamento de Retorno Serviço Transmissão -
-MDFeRecepcaoEventoSucceeded20250416 06:47:4000:02:01O trabalho foi bem-sucedido.
-O trabalho foi invocado por Agenda 158 (MDFeRecepcaoEvento). A última etapa a
-ser executada foi 1 (MDFeRecepcaoEvento).MDFe - 302 - Tratamento de Retorno
-Serviço Transmissão - MDFeRecepcaoEventoSucceeded20250416 06:40:4000:02:00O
-trabalho foi bem-sucedido. O trabalho foi invocado por Agenda 158
-(MDFeRecepcaoEvento). A última etapa a ser executada foi 1 (MDFeRecepcaoEvento).
+Job NameStatusExecution DateDurationSQL MessageDBA - CargasSucceeded20250415
+21:00:0000:08:15The job succeeded. The Job was invoked by Schedule 227
+(Recorrente 1 Hora). The last step to run was step 1 (Cargas).DBA -
+CargasSucceeded20250415 22:00:0000:07:27The job succeeded. The Job was invoked
+by Schedule 227 (Recorrente 1 Hora). The last step to run was step 1
+(Cargas).DBA - Backup LogSucceeded20250416 06:45:0000:04:36The job succeeded.
+The Job was invoked by Schedule 225 (15 Minutos). The last step to run was step
+2 (BKP).BL - Ajustes no RadarSucceeded20250416 01:30:0000:04:07The job
+succeeded. The Job was invoked by Schedule 193 (15 minutos). The last step to
+run was step 1 (Data Manual).DBA - Backup LogSucceeded20250416
+06:30:0000:03:54The job succeeded. The Job was invoked by Schedule 225 (15
+Minutos). The last step to run was step 2 (BKP).DataEX - Alert DB - Every
+DaySucceeded20250416 06:50:0000:02:42The job succeeded. The Job was invoked by
+Schedule 197 (DataEX - Alert DB - Every Day). The last step to run was step 1
+(DataEX - Alert DB).DBA - Backup LogSucceeded20250416 01:30:0000:02:17The job
+succeeded. The Job was invoked by Schedule 225 (15 Minutos). The last step to
+run was step 2 (BKP).DBA - Backup LogSucceeded20250415 22:15:0000:01:19The job
+succeeded. The Job was invoked by Schedule 225 (15 Minutos). The last step to
+run was step 2 (BKP).Agendamento - Verificação de Desagio CAPSucceeded20250415
+19:45:0000:01:14The job succeeded. The Job was invoked by Schedule 128 (5
+Minutos). The last step to run was step 1 (Executar).Agendamento - Verificação
+de Desagio CAPSucceeded20250415 19:50:0000:01:06The job succeeded. The Job was
+invoked by Schedule 128 (5 Minutos). The last step to run was step 1 (Executar).
 
 
 
@@ -241,30 +309,7 @@ TOP 10 - Queries Demoradas Dia Anterior (07:00 - 23:00)
 
 
 Prefixo QueryQuantityTotal (s)AVG (s)MIN (s)MAX (s)WritesCPU
-(m)ReadsOrdem--Transfere novos lotes para fila de transmissão exec dbo.s051x1_0
-@cd_estd_emit_nfe = 0 ,@cd_cnpj_emit_nfe = 0 ,@cd_user_manu = 'Job-021'
-144042562.8129.5629.0030.254053119534209897691--Gera Arquivo de Retorno ERP de
-Notas Fiscais Recebidas dos Fornecedores exec s201i5_9 @funcao = '1' ,@cd_ambi =
-1 ,@cd_user = 'Job-031' 141341871.4429.6326.3348.1614757409196813244681221exec
-dtx_sp_Load_SQL_Counter 8374199.175.025.015.42191366755671--Importa Arquivos de
-Notas exec dbo.sitfc201m0_0 @cd_user_cadm = 'Job-010'
-6262785.454.453.0113.61212531003537155941101-- Converte notas em processo de
-contingencia exec dbo.s061m3_0 @funcao = 'I' ,@cd_ambi = 1 ,@cd_user_manu =
-'Job-040' ,@fl_abre_tran = 'S'5952059.653.463.009.250881917392138651--Transfere
-as notas do DB_GNFE_ITFC para DB_GNFE e inicia Validação exec dbo.s201i1_0
-@funcao = 'S' ,@cd_user_manu = 'Job-020'
-5852492.254.263.0022.066415434149689640491exec dbo.s597m7_0 @funcao = '11'
-,@cd_serv_webs = 'MDFeRecepcaoEvento' ,@cd_user_manu = 'Job-302' ,@fl_dbug = 'N'
-,@qt_wait_for = '00:00:0041149139.86119.56119.03120.072410119619062131declare
-@p5 int set @p5=0 declare @p6 varchar(255) set @p6='Inclusão realizada com
-sucesso.' exec s051s1_1
-@cd_user_manu='SERVTRAN1',@cd_serv_tran3281173.483.583.008.7375463099258814131declare
-@p5 int set @p5=0 declare @p6 varchar(255) set @p6='Inclusão realizada com
-sucesso.' exec s051s1_1
-@cd_user_manu='SERVTRAN1B',@cd_serv_tra3271179.913.613.005.9178459475258030561declare
-@p5 int set @p5=0 declare @p6 varchar(255) set @p6='Inclusão realizada com
-sucesso.' exec s051s1_1
-@cd_user_manu='SERVTRAN2',@cd_serv_tran240867.523.613.007.7239338895189457471OUTRAS5952568219.4495.473.00134.659804738245382409259342TOTAL12754716550.9827.473.00134.651893898162932217226978453
+(m)ReadsOrdemWithout Information About Slow Queries--------1
 
 
 
@@ -274,7 +319,7 @@ TOP 10 - Queries Demoradas - Últimos 10 Dias (07:00 - 23:00)
 
 
 
-DateQTD2025-04-15127542025-04-14128972025-04-1393702025-04-1291202025-04-11120552025-04-10122452025-04-09124792025-04-08125782025-04-07123232025-04-0610008
+DateQTDWithout Information About Slow Queries-
 
 
 
@@ -286,7 +331,7 @@ Média Contadores Dia Anterior (07:00 - 23:00)
 
 HourBatch RequestsCPUPLESQL CompilationsUser ConnectionNum Slow QueriesReads
 Slow QueriesPage
-Splits/sec71493577192113189018285890182858486208818947807922144989372609893726085024149236628439221471157131171157131178550833102406887991315112781940112781940186214381124967915914151127114530127114530869624812230619519141481120915021120915028767415132085298791214510437121410437121488158361423156102391214610907988010907988088648741524161105991314811636246811636246889228121623764109591414812173890912173890989840641724466113191415012759878412759878490575951821957116791314611258006711258006791320911916439120391113891920177919201779170928201513612399011349015386190153861918228121149351275901131895640078956400791897692214835131190113088634383886343839195447
+Splits/sec77713311022522272634--138288064468920534529025223814--138446015659919544311025864381--13861627578101091949397932354606--1387870534311955544263026314487--1389411293412674141375917433460--1390867293913685139602520393318--1392677788814849044365325384470--13945353175151018547376929544920--1396514675516796345351122454127--1397977172117860145330524343649--1399427296218891532387224362937--1401081079019897029560523642498--1402487675020668525576718642348--1403621787321516423518412702189--1404521620522456122348911791913--14051804803
 
 
 
@@ -296,8 +341,9 @@ TOP 10 - Conexões Abertas por Usuários
 
 
 
-OrderLogin NameSession Count1gnfe1091COBRA\Administrator171AUTORIDADE
-NT\SISTEMA32TOTAL129
+OrderLogin NameSession
+Count1benner22601sa5391PATRUS\nddservice211PATRUS\sqlservice81PATRUS\ivory.davidson41NT
+AUTHORITY\SYSTEM11NT SERVICE\SQLTELEMETRY12TOTAL2834
 
 
 
@@ -307,17 +353,8 @@ TOP 10 - Fragmentação dos Índices
 
 
 
-DateDatabaseTableIndexFragmentation (%)Page CountFill
-FactorCompression2025-04-02
-00:00:00DB_GNFEtbl_219_nfe_traki01_219_nfe_trak97.6325348330NO
-Compression2025-04-02
-00:00:00DB_GNFEtbl_219_nfe_traki02_219_nfe_trak96.3727541800NO
-Compression2025-04-02
-00:00:00DB_GNFEtbl_219_nfe_trakipk_219_nfe_trak93.7759598510NO
-Compression2025-04-02
-00:00:00ReportServerExecutionLogStoragePK__Executio__05F5D74515DA3E5D13.9215834400NO
-Compression2025-04-02
-00:00:00ReportServerExecutionLogStorageIX_ExecutionLog11.93226780NO Compression
+DateDatabaseTableIndexFragmentation (%)Page CountFill FactorCompression-Without
+Information about Index with more than 10% of Fragmentarion--0.00---
 
 
 
@@ -329,15 +366,16 @@ TOP 10 - Waits Stats Dia Anterior (07:00 - 23:00)
 
 Wait TypeLast Log DateDif Wait (s)Dif Resource (s)Dif Signal (s)Dif Wait
 CountPercentageCXPACKET2025-04-15
-22:37:0745463.1844699.48763.6975919826.06LCK_M_X2025-04-15
-22:37:0719275.3319109.03166.292128357.43MSQL_XP2025-04-15
-22:37:075951.735951.730.002038513.54PREEMPTIVE_OS_AUTHENTICATIONOPS2025-04-15
-22:37:073051.883051.880.0035231151.83LCK_M_IX2025-04-15
-22:37:071096.981051.2845.71571911.45PAGEIOLATCH_SH2025-04-15
-22:37:071068.681065.333.35556971.45BACKUPIO2025-04-15
-22:37:07201.24194.336.92104556.55LATCH_SH2025-04-15
-22:37:0743.5740.802.7723491.13ASYNC_IO_COMPLETION2025-04-15
-22:37:070.000.000.0008.33BACKUPBUFFER2025-04-15 22:37:070.000.000.0006.82
+22:37:072219845.772194551.3925294.384677350233.97CXCONSUMER2025-04-15
+22:37:072173322.612130642.5542680.064835833029.26HTDELETE2025-04-15
+22:37:07400136.42397294.032842.3933487616.57HTREPARTITION2025-04-15
+22:37:07286259.38282876.423382.9741804765.24BPSORT2025-04-15
+22:37:07119911.12116827.333083.7842436011.70HTBUILD2025-04-15
+22:37:07104946.23102101.222845.0134505021.97ASYNC_NETWORK_IO2025-04-15
+22:37:0788507.3387152.021355.3192927061.33LCK_M_U2025-04-15
+22:37:0757072.8957021.6051.28853401.44PREEMPTIVE_HADR_LEASE_MECHANISM2025-04-15
+22:37:070.000.000.0003.78PREEMPTIVE_SP_SERVER_DIAGNOSTICS2025-04-15
+22:37:070.000.000.0003.78
 
 
 
@@ -348,7 +386,9 @@ Alertas Sem CLEAR
 
 
 AlertMessageDateOpen TimeDisk SpaceALERTA: Existe um disco com mais de 90% de
-utilização no Servidor: COBRAGNFE2025-03-11 06:25:3336 Dia(s) 00:29:54
+utilização no Servidor: SQLPRODUCAO-032024-09-17 10:55:3510 Dia(s) 20:00:57Large
+LDF FileALERTA: Existe um Arquivo de Log com 50 % do tamanho do arquivo de Dados
+no Servidor: SQLPRODUCAO-032023-10-08 20:05:3155 Dia(s) 10:51:01
 
 
 
@@ -358,8 +398,106 @@ TOP 50 - Alertas Últimas 24 horas
 
 
 
-AlertMessageDateOpen TimeAlert Without ClearALERTA: Existe(m) Alerta(s) sem
-Clear no Servidor: COBRAGNFE2025-04-16 06:50:18-
+AlertMessageDateOpen TimeBlocked ProcessCLEAR: Não existe mais um processo
+Bloqueado a mais de 2 minuto(s) no Servidor: SQLPRODUCAO-032025-04-15 22:34:3200
+Dia(s) 00:14:00Blocked Long ProcessCLEAR: Não existe mais um processo Bloqueado
+a mais de 20 minuto(s) no Servidor: SQLPRODUCAO-032025-04-15 22:34:3200 Dia(s)
+00:14:00Blocked Long ProcessALERTA: Existe(m) 1 Processo(s) Bloqueado(s) a mais
+de 20 minuto(s) e um total de 2 Lock(s) no Servidor: SQLPRODUCAO-032025-04-15
+22:20:32-Blocked ProcessALERTA: Existe(m) 1 Processo(s) Bloqueado(s) a mais de 2
+minuto(s) e um total de 1 Lock(s) no Servidor: SQLPRODUCAO-032025-04-15
+22:04:32-Blocked ProcessCLEAR: Não existe mais um processo Bloqueado a mais de 2
+minuto(s) no Servidor: SQLPRODUCAO-032025-04-15 20:07:3200 Dia(s)
+00:00:59Blocked ProcessALERTA: Existe(m) 2 Processo(s) Bloqueado(s) a mais de 2
+minuto(s) e um total de 3 Lock(s) no Servidor: SQLPRODUCAO-032025-04-15
+20:06:33-Blocked ProcessCLEAR: Não existe mais um processo Bloqueado a mais de 2
+minuto(s) no Servidor: SQLPRODUCAO-032025-04-15 19:01:3300 Dia(s)
+00:01:00Blocked ProcessALERTA: Existe(m) 1 Processo(s) Bloqueado(s) a mais de 2
+minuto(s) e um total de 8 Lock(s) no Servidor: SQLPRODUCAO-032025-04-15
+19:00:33-Blocked ProcessCLEAR: Não existe mais um processo Bloqueado a mais de 2
+minuto(s) no Servidor: SQLPRODUCAO-032025-04-15 18:54:3200 Dia(s)
+00:01:00Blocked ProcessALERTA: Existe(m) 1 Processo(s) Bloqueado(s) a mais de 2
+minuto(s) e um total de 2 Lock(s) no Servidor: SQLPRODUCAO-032025-04-15
+18:53:32-Blocked ProcessCLEAR: Não existe mais um processo Bloqueado a mais de 2
+minuto(s) no Servidor: SQLPRODUCAO-032025-04-15 17:24:3300 Dia(s)
+00:00:59Blocked ProcessALERTA: Existe(m) 1 Processo(s) Bloqueado(s) a mais de 2
+minuto(s) e um total de 1 Lock(s) no Servidor: SQLPRODUCAO-032025-04-15
+17:23:34-SQL Server ConnectionCLEAR: Não existem mais 5000 Conexões Abertas no
+SQL Server no Servidor: SQLPRODUCAO-032025-04-15 16:58:3300 Dia(s)
+00:58:00Blocked ProcessCLEAR: Não existe mais um processo Bloqueado a mais de 2
+minuto(s) no Servidor: SQLPRODUCAO-032025-04-15 16:01:3300 Dia(s)
+00:01:00Blocked ProcessALERTA: Existe(m) 1 Processo(s) Bloqueado(s) a mais de 2
+minuto(s) e um total de 7 Lock(s) no Servidor: SQLPRODUCAO-032025-04-15
+16:00:33-Blocked ProcessCLEAR: Não existe mais um processo Bloqueado a mais de 2
+minuto(s) no Servidor: SQLPRODUCAO-032025-04-15 15:51:3300 Dia(s)
+00:01:00Blocked ProcessALERTA: Existe(m) 2 Processo(s) Bloqueado(s) a mais de 2
+minuto(s) e um total de 3 Lock(s) no Servidor: SQLPRODUCAO-032025-04-15
+15:50:33-Blocked ProcessCLEAR: Não existe mais um processo Bloqueado a mais de 2
+minuto(s) no Servidor: SQLPRODUCAO-032025-04-15 15:35:3200 Dia(s)
+00:01:00Blocked ProcessALERTA: Existe(m) 1 Processo(s) Bloqueado(s) a mais de 2
+minuto(s) e um total de 2 Lock(s) no Servidor: SQLPRODUCAO-032025-04-15
+15:34:32-SQL Server ConnectionALERTA: Existem mais de 5000 Conexões Abertas no
+SQL Server no Servidor: SQLPRODUCAO-032025-04-15 14:58:34-Blocked ProcessCLEAR:
+Não existe mais um processo Bloqueado a mais de 2 minuto(s) no Servidor:
+SQLPRODUCAO-032025-04-15 14:50:3300 Dia(s) 00:47:01Blocked Long ProcessCLEAR:
+Não existe mais um processo Bloqueado a mais de 20 minuto(s) no Servidor:
+SQLPRODUCAO-032025-04-15 14:50:3300 Dia(s) 00:47:01Blocked Long ProcessALERTA:
+Existe(m) 1 Processo(s) Bloqueado(s) a mais de 20 minuto(s) e um total de 6
+Lock(s) no Servidor: SQLPRODUCAO-032025-04-15 14:03:32-Blocked ProcessALERTA:
+Existe(m) 1 Processo(s) Bloqueado(s) a mais de 2 minuto(s) e um total de 2
+Lock(s) no Servidor: SQLPRODUCAO-032025-04-15 13:45:32-Blocked ProcessCLEAR: Não
+existe mais um processo Bloqueado a mais de 2 minuto(s) no Servidor:
+SQLPRODUCAO-032025-04-15 12:12:3300 Dia(s) 00:13:59Blocked Long ProcessCLEAR:
+Não existe mais um processo Bloqueado a mais de 20 minuto(s) no Servidor:
+SQLPRODUCAO-032025-04-15 12:12:3300 Dia(s) 00:13:59SQL Server ConnectionCLEAR:
+Não existem mais 5000 Conexões Abertas no SQL Server no Servidor:
+SQLPRODUCAO-032025-04-15 11:58:3500 Dia(s) 00:00:01Blocked Long ProcessALERTA:
+Existe(m) 1 Processo(s) Bloqueado(s) a mais de 20 minuto(s) e um total de 2
+Lock(s) no Servidor: SQLPRODUCAO-032025-04-15 11:58:34-Blocked ProcessALERTA:
+Existe(m) 1 Processo(s) Bloqueado(s) a mais de 2 minuto(s) e um total de 2
+Lock(s) no Servidor: SQLPRODUCAO-032025-04-15 11:40:32-Blocked ProcessCLEAR: Não
+existe mais um processo Bloqueado a mais de 2 minuto(s) no Servidor:
+SQLPRODUCAO-032025-04-15 10:28:3300 Dia(s) 00:01:00Blocked ProcessALERTA:
+Existe(m) 1 Processo(s) Bloqueado(s) a mais de 2 minuto(s) e um total de 8
+Lock(s) no Servidor: SQLPRODUCAO-032025-04-15 10:27:33-Blocked ProcessCLEAR: Não
+existe mais um processo Bloqueado a mais de 2 minuto(s) no Servidor:
+SQLPRODUCAO-032025-04-15 10:20:3300 Dia(s) 00:12:00Blocked ProcessALERTA:
+Existe(m) 1 Processo(s) Bloqueado(s) a mais de 2 minuto(s) e um total de 3
+Lock(s) no Servidor: SQLPRODUCAO-032025-04-15 10:08:33-Blocked ProcessCLEAR: Não
+existe mais um processo Bloqueado a mais de 2 minuto(s) no Servidor:
+SQLPRODUCAO-032025-04-15 10:06:3500 Dia(s) 00:01:59Blocked Long ProcessCLEAR:
+Não existe mais um processo Bloqueado a mais de 20 minuto(s) no Servidor:
+SQLPRODUCAO-032025-04-15 10:06:3500 Dia(s) 00:01:59Blocked Long ProcessALERTA:
+Existe(m) 1 Processo(s) Bloqueado(s) a mais de 20 minuto(s) e um total de 2
+Lock(s) no Servidor: SQLPRODUCAO-032025-04-15 10:04:36-SQL Server
+ConnectionALERTA: Existem mais de 5000 Conexões Abertas no SQL Server no
+Servidor: SQLPRODUCAO-032025-04-15 09:58:33-Blocked ProcessALERTA: Existe(m) 1
+Processo(s) Bloqueado(s) a mais de 2 minuto(s) e um total de 1 Lock(s) no
+Servidor: SQLPRODUCAO-032025-04-15 09:46:33-Blocked ProcessCLEAR: Não existe
+mais um processo Bloqueado a mais de 2 minuto(s) no Servidor:
+SQLPRODUCAO-032025-04-15 09:40:3400 Dia(s) 00:06:02Blocked ProcessALERTA:
+Existe(m) 12 Processo(s) Bloqueado(s) a mais de 2 minuto(s) e um total de 37
+Lock(s) no Servidor: SQLPRODUCAO-032025-04-15 09:34:32-Blocked ProcessCLEAR: Não
+existe mais um processo Bloqueado a mais de 2 minuto(s) no Servidor:
+SQLPRODUCAO-032025-04-15 09:24:3300 Dia(s) 00:02:00Blocked ProcessALERTA:
+Existe(m) 4 Processo(s) Bloqueado(s) a mais de 2 minuto(s) e um total de 6
+Lock(s) no Servidor: SQLPRODUCAO-032025-04-15 09:22:33-Blocked ProcessCLEAR: Não
+existe mais um processo Bloqueado a mais de 2 minuto(s) no Servidor:
+SQLPRODUCAO-032025-04-15 09:09:3200 Dia(s) 00:01:59Blocked ProcessALERTA:
+Existe(m) 5 Processo(s) Bloqueado(s) a mais de 2 minuto(s) e um total de 8
+Lock(s) no Servidor: SQLPRODUCAO-032025-04-15 09:07:33-Blocked ProcessCLEAR: Não
+existe mais um processo Bloqueado a mais de 2 minuto(s) no Servidor:
+SQLPRODUCAO-032025-04-15 09:06:3300 Dia(s) 00:01:01Blocked ProcessALERTA:
+Existe(m) 1 Processo(s) Bloqueado(s) a mais de 2 minuto(s) e um total de 9
+Lock(s) no Servidor: SQLPRODUCAO-032025-04-15 09:05:32-Blocked ProcessCLEAR: Não
+existe mais um processo Bloqueado a mais de 2 minuto(s) no Servidor:
+SQLPRODUCAO-032025-04-15 08:36:3200 Dia(s) 00:01:00Blocked ProcessALERTA:
+Existe(m) 1 Processo(s) Bloqueado(s) a mais de 2 minuto(s) e um total de 10
+Lock(s) no Servidor: SQLPRODUCAO-032025-04-15 08:35:32-Blocked ProcessCLEAR: Não
+existe mais um processo Bloqueado a mais de 2 minuto(s) no Servidor:
+SQLPRODUCAO-032025-04-15 07:21:3200 Dia(s) 00:01:00Blocked ProcessALERTA:
+Existe(m) 1 Processo(s) Bloqueado(s) a mais de 2 minuto(s) e um total de 1
+Lock(s) no Servidor: SQLPRODUCAO-032025-04-15 07:20:32-
 
 
 
@@ -379,10 +517,170 @@ TOP 100 - Error Log do SQL Server
 
 
 
-DateProcess InfoText2025-04-16 00:00:42spid17sThis instance of SQL Server has
-been using a process ID of 2032 since 01/04/2025 10:54:38 (local) 01/04/2025
-13:54:38 (UTC). This is an informational message only; no user action is
-required.
+DateProcess InfoText2025-04-16 05:55:53spid288s[INFO] Database ID: [5]. Deleting
+unrecoverable checkpoint table row (id: 1092165).2025-04-16
+05:55:53spid288s[INFO] Database ID: [5]. Deleting unrecoverable checkpoint table
+row (id: 1092163).2025-04-16 05:55:53spid288s[INFO] Database ID: [5]. Deleting
+unrecoverable checkpoint table row (id: 1092170).2025-04-16
+05:55:53spid288s[INFO] Database ID: [5]. Deleting unrecoverable checkpoint table
+row (id: 1092166).2025-04-16 05:55:53spid288s[INFO] Database ID: [5]. Deleting
+unrecoverable checkpoint table row (id: 1092168).2025-04-16
+05:55:53spid288s[INFO] Database ID: [5]. Deleting unrecoverable checkpoint table
+row (id: 1092171).2025-04-16 05:55:53spid288s[INFO] Database ID: [5]. Deleting
+unrecoverable checkpoint table row (id: 1092167).2025-04-16
+05:53:51spid1639sChange Tracking autocleanup is blocked on side table of
+"GLOP_CONTRATOFRETES". If the failure persists, check if the table
+"GLOP_CONTRATOFRETES" is blocked by any process .2025-04-16
+05:48:27ServerProcess 0:0:0 (0xb6d0) Worker 0x00000581F604E160 appears to be
+non-yielding on Scheduler 80. Thread creation time: 13389239957606. Approx
+Thread CPU Used: kernel 87484 ms, user 0 ms. Process Utilization 24%. System
+Idle 78%. Interval: 87475 ms.2025-04-16 05:32:23spid288s[INFO] Database ID: [5].
+Deleting unrecoverable checkpoint table row (id: 1092158).2025-04-16
+05:32:23spid288s[INFO] Database ID: [5]. Deleting unrecoverable checkpoint table
+row (id: 1092153).2025-04-16 05:32:23spid288s[INFO] Database ID: [5]. Deleting
+unrecoverable checkpoint table row (id: 1092159).2025-04-16
+05:32:23spid288s[INFO] Database ID: [5]. Deleting unrecoverable checkpoint table
+row (id: 1092157).2025-04-16 05:32:23spid288s[INFO] Database ID: [5]. Deleting
+unrecoverable checkpoint table row (id: 1092155).2025-04-16
+05:32:23spid288s[INFO] Database ID: [5]. Deleting unrecoverable checkpoint table
+row (id: 1092156).2025-04-16 05:32:23spid288s[INFO] Database ID: [5]. Deleting
+unrecoverable checkpoint table row (id: 1092161).2025-04-16
+05:32:23spid288s[INFO] Database ID: [5]. Deleting unrecoverable checkpoint table
+row (id: 1092154).2025-04-16 05:32:23spid288s[INFO] Database ID: [5]. Deleting
+unrecoverable checkpoint table row (id: 1092160).2025-04-16
+05:32:23spid288s[INFO] Database ID: [5]. Deleting unrecoverable checkpoint table
+row (id: 1092152).2025-04-16 05:23:09spid1639sChange Tracking autocleanup is
+blocked on side table of "GLOP_VIAGENS". If the failure persists, check if the
+table "GLOP_VIAGENS" is blocked by any process .2025-04-16
+05:22:13spid1639sChange Tracking autocleanup is blocked on side table of
+"GLGL_DOCUMENTOTRIBUTOS". If the failure persists, check if the table
+"GLGL_DOCUMENTOTRIBUTOS" is blocked by any process .2025-04-16
+05:21:42spid1639sChange Tracking autocleanup is blocked on side table of
+"FN_MOVIMENTACOES". If the failure persists, check if the table
+"FN_MOVIMENTACOES" is blocked by any process .2025-04-16 05:21:11spid1639sChange
+Tracking autocleanup is blocked on side table of "FN_LANCAMENTOCC". If the
+failure persists, check if the table "FN_LANCAMENTOCC" is blocked by any process
+.2025-04-16 05:20:38spid1639sChange Tracking autocleanup is blocked on side
+table of "GLOP_VIAGENS". If the failure persists, check if the table
+"GLOP_VIAGENS" is blocked by any process .2025-04-16 05:20:06spid1639sChange
+Tracking autocleanup is blocked on side table of "GLOP_VIAGEMMANIFESTOS". If the
+failure persists, check if the table "GLOP_VIAGEMMANIFESTOS" is blocked by any
+process .2025-04-16 05:19:47spid288s[INFO] Database ID: [5]. Deleting
+unrecoverable checkpoint table row (id: 1092142).2025-04-16
+05:19:47spid288s[INFO] Database ID: [5]. Deleting unrecoverable checkpoint table
+row (id: 1092147).2025-04-16 05:19:47spid288s[INFO] Database ID: [5]. Deleting
+unrecoverable checkpoint table row (id: 1092144).2025-04-16
+05:19:47spid288s[INFO] Database ID: [5]. Deleting unrecoverable checkpoint table
+row (id: 1092149).2025-04-16 05:19:47spid288s[INFO] Database ID: [5]. Deleting
+unrecoverable checkpoint table row (id: 1092145).2025-04-16
+05:19:47spid288s[INFO] Database ID: [5]. Deleting unrecoverable checkpoint table
+row (id: 1092140).2025-04-16 05:19:47spid288s[INFO] Database ID: [5]. Deleting
+unrecoverable checkpoint table row (id: 1092151).2025-04-16
+05:19:47spid288s[INFO] Database ID: [5]. Deleting unrecoverable checkpoint table
+row (id: 1092143).2025-04-16 05:19:47spid288s[INFO] Database ID: [5]. Deleting
+unrecoverable checkpoint table row (id: 1092141).2025-04-16
+05:19:47spid288s[INFO] Database ID: [5]. Deleting unrecoverable checkpoint table
+row (id: 1092139).2025-04-16 05:19:47spid288s[INFO] Database ID: [5]. Deleting
+unrecoverable checkpoint table row (id: 1092138).2025-04-16
+05:19:47spid288s[INFO] Database ID: [5]. Deleting unrecoverable checkpoint table
+row (id: 1092146).2025-04-16 05:19:47spid288s[INFO] Database ID: [5]. Deleting
+unrecoverable checkpoint table row (id: 1092150).2025-04-16
+05:19:47spid288s[INFO] Database ID: [5]. Deleting unrecoverable checkpoint table
+row (id: 1092148).2025-04-16 05:19:35spid1639sChange Tracking autocleanup is
+blocked on side table of "GLGL_DOCUMENTOTRIBUTOS". If the failure persists,
+check if the table "GLGL_DOCUMENTOTRIBUTOS" is blocked by any process
+.2025-04-16 05:18:16spid1639sChange Tracking autocleanup is blocked on side
+table of "FN_MOVIMENTACOES". If the failure persists, check if the table
+"FN_MOVIMENTACOES" is blocked by any process .2025-04-16 05:02:48spid288s[INFO]
+Database ID: [5]. Deleting unrecoverable checkpoint table row (id:
+1092128).2025-04-16 05:02:48spid288s[INFO] Database ID: [5]. Deleting
+unrecoverable checkpoint table row (id: 1092127).2025-04-16
+05:02:48spid288s[INFO] Database ID: [5]. Deleting unrecoverable checkpoint table
+row (id: 1092125).2025-04-16 05:02:48spid288s[INFO] Database ID: [5]. Deleting
+unrecoverable checkpoint table row (id: 1092132).2025-04-16
+05:02:48spid288s[INFO] Database ID: [5]. Deleting unrecoverable checkpoint table
+row (id: 1092135).2025-04-16 05:02:48spid288s[INFO] Database ID: [5]. Deleting
+unrecoverable checkpoint table row (id: 1092133).2025-04-16
+05:02:48spid288s[INFO] Database ID: [5]. Deleting unrecoverable checkpoint table
+row (id: 1092136).2025-04-16 05:02:48spid288s[INFO] Database ID: [5]. Deleting
+unrecoverable checkpoint table row (id: 1092131).2025-04-16
+05:02:48spid288s[INFO] Database ID: [5]. Deleting unrecoverable checkpoint table
+row (id: 1092137).2025-04-16 05:02:48spid288s[INFO] Database ID: [5]. Deleting
+unrecoverable checkpoint table row (id: 1092129).2025-04-16
+05:02:48spid288s[INFO] Database ID: [5]. Deleting unrecoverable checkpoint table
+row (id: 1092130).2025-04-16 05:02:48spid288s[INFO] Database ID: [5]. Deleting
+unrecoverable checkpoint table row (id: 1092126).2025-04-16
+05:02:48spid288s[INFO] Database ID: [5]. Deleting unrecoverable checkpoint table
+row (id: 1092134).2025-04-16 05:02:48spid288s[INFO] Database ID: [5]. Deleting
+unrecoverable checkpoint table row (id: 1092124).2025-04-16
+04:47:12spid288s[INFO] Database ID: [5]. Deleting unrecoverable checkpoint table
+row (id: 1092120).2025-04-16 04:47:12spid288s[INFO] Database ID: [5]. Deleting
+unrecoverable checkpoint table row (id: 1092118).2025-04-16
+04:47:12spid288s[INFO] Database ID: [5]. Deleting unrecoverable checkpoint table
+row (id: 1092116).2025-04-16 04:47:12spid288s[INFO] Database ID: [5]. Deleting
+unrecoverable checkpoint table row (id: 1092123).2025-04-16
+04:47:12spid288s[INFO] Database ID: [5]. Deleting unrecoverable checkpoint table
+row (id: 1092117).2025-04-16 04:47:12spid288s[INFO] Database ID: [5]. Deleting
+unrecoverable checkpoint table row (id: 1092121).2025-04-16
+04:47:12spid288s[INFO] Database ID: [5]. Deleting unrecoverable checkpoint table
+row (id: 1092115).2025-04-16 04:47:12spid288s[INFO] Database ID: [5]. Deleting
+unrecoverable checkpoint table row (id: 1092119).2025-04-16
+04:47:12spid288s[INFO] Database ID: [5]. Deleting unrecoverable checkpoint table
+row (id: 1092122).2025-04-16 04:47:12spid288s[INFO] Database ID: [5]. Deleting
+unrecoverable checkpoint table row (id: 1092114).2025-04-16
+04:32:02spid288s[INFO] Database ID: [5]. Deleting unrecoverable checkpoint table
+row (id: 1092108).2025-04-16 04:32:02spid288s[INFO] Database ID: [5]. Deleting
+unrecoverable checkpoint table row (id: 1092113).2025-04-16
+04:32:02spid288s[INFO] Database ID: [5]. Deleting unrecoverable checkpoint table
+row (id: 1092109).2025-04-16 04:32:02spid288s[INFO] Database ID: [5]. Deleting
+unrecoverable checkpoint table row (id: 1092110).2025-04-16
+04:32:02spid288s[INFO] Database ID: [5]. Deleting unrecoverable checkpoint table
+row (id: 1092106).2025-04-16 04:32:02spid288s[INFO] Database ID: [5]. Deleting
+unrecoverable checkpoint table row (id: 1092104).2025-04-16
+04:32:02spid288s[INFO] Database ID: [5]. Deleting unrecoverable checkpoint table
+row (id: 1092103).2025-04-16 04:32:02spid288s[INFO] Database ID: [5]. Deleting
+unrecoverable checkpoint table row (id: 1092111).2025-04-16
+04:32:02spid288s[INFO] Database ID: [5]. Deleting unrecoverable checkpoint table
+row (id: 1092107).2025-04-16 04:32:02spid288s[INFO] Database ID: [5]. Deleting
+unrecoverable checkpoint table row (id: 1092112).2025-04-16
+04:32:02spid288s[INFO] Database ID: [5]. Deleting unrecoverable checkpoint table
+row (id: 1092105).2025-04-16 04:18:32spid288s[INFO] Database ID: [5]. Deleting
+unrecoverable checkpoint table row (id: 1092099).2025-04-16
+04:18:32spid288s[INFO] Database ID: [5]. Deleting unrecoverable checkpoint table
+row (id: 1092097).2025-04-16 04:18:32spid288s[INFO] Database ID: [5]. Deleting
+unrecoverable checkpoint table row (id: 1092100).2025-04-16
+04:18:32spid288s[INFO] Database ID: [5]. Deleting unrecoverable checkpoint table
+row (id: 1092093).2025-04-16 04:18:32spid288s[INFO] Database ID: [5]. Deleting
+unrecoverable checkpoint table row (id: 1092089).2025-04-16
+04:18:32spid288s[INFO] Database ID: [5]. Deleting unrecoverable checkpoint table
+row (id: 1092087).2025-04-16 04:18:32spid288s[INFO] Database ID: [5]. Deleting
+unrecoverable checkpoint table row (id: 1092091).2025-04-16
+04:18:32spid288s[INFO] Database ID: [5]. Deleting unrecoverable checkpoint table
+row (id: 1092096).2025-04-16 04:18:32spid288s[INFO] Database ID: [5]. Deleting
+unrecoverable checkpoint table row (id: 1092101).2025-04-16
+04:18:32spid288s[INFO] Database ID: [5]. Deleting unrecoverable checkpoint table
+row (id: 1092085).2025-04-16 04:18:32spid288s[INFO] Database ID: [5]. Deleting
+unrecoverable checkpoint table row (id: 1092094).2025-04-16
+04:18:32spid288s[INFO] Database ID: [5]. Deleting unrecoverable checkpoint table
+row (id: 1092088).2025-04-16 04:18:32spid288s[INFO] Database ID: [5]. Deleting
+unrecoverable checkpoint table row (id: 1092086).2025-04-16
+04:18:32spid288s[INFO] Database ID: [5]. Deleting unrecoverable checkpoint table
+row (id: 1092098).2025-04-16 04:18:32spid288s[INFO] Database ID: [5]. Deleting
+unrecoverable checkpoint table row (id: 1092092).2025-04-16
+04:18:32spid288s[INFO] Database ID: [5]. Deleting unrecoverable checkpoint table
+row (id: 1092090).2025-04-16 04:18:32spid288s[INFO] Database ID: [5]. Deleting
+unrecoverable checkpoint table row (id: 1092102).2025-04-16
+04:18:32spid288s[INFO] Database ID: [5]. Deleting unrecoverable checkpoint table
+row (id: 1092095).2025-04-16 04:02:57spid288s[INFO] Database ID: [5]. Deleting
+unrecoverable checkpoint table row (id: 1092083).2025-04-16
+04:02:57spid288s[INFO] Database ID: [5]. Deleting unrecoverable checkpoint table
+row (id: 1092081).2025-04-16 04:02:57spid288s[INFO] Database ID: [5]. Deleting
+unrecoverable checkpoint table row (id: 1092080).2025-04-16
+04:02:57spid288s[INFO] Database ID: [5]. Deleting unrecoverable checkpoint table
+row (id: 1092084).2025-04-16 04:02:57spid288s[INFO] Database ID: [5]. Deleting
+unrecoverable checkpoint table row (id: 1092082).2025-04-16
+04:02:57spid288s[INFO] Database ID: [5]. Deleting unrecoverable checkpoint table
+row (id: 1092079).
 
 
 
