@@ -76,4 +76,34 @@ SELECT DISTINCT TOP 100001
     bomInfo.child AS articleCode,
     level AS ROW_DEPTH,
     breadCrumb,
-    Article.articleCode AS [Article
+    Article.articleCode AS [Article.articleCode],
+    Article.warehouse AS [Article.warehouse],
+    Article.code AS [Article.code],
+    Article.uD1 AS [Article.uD1],
+    Article.uD5 AS [Article.uD5],
+    AddUserDefinedFields.aUDField4 AS [Article.aUDField4],
+    Article.eoqCalculated AS [Article.eoqCalculated],
+    Article.averageDemand AS [Article.averageDemand],
+    Article.stockOnHand AS [Article.stockOnHand],
+    Article.stockOnOrder AS [Article.stockOnOrder],
+    Article.backOrders AS [Article.backOrders],
+    Article.orderLevel AS [Article.orderLevel],
+    Article.roundedOrderQuantity AS [Article.roundedOrderQuantity],
+    ROUND(Article.leadTime, 2) AS [Article.leadTimeInMonths],
+    Article.unitPrice AS [Article.unitPrice],
+    Article.supplierMinOrderQuantity AS [Article.supplierMinOrderQuantity],
+    Article.supplierIncOrderQuantity AS [Article.supplierIncOrderQuantity],
+    Article.description AS [Article.description]
+FROM bomInfo
+INNER JOIN Article ON bomInfo.child = Article.articleCode
+LEFT OUTER JOIN AddUserDefinedFields ON Article.articleCode = AddUserDefinedFields.articleCode
+WHERE Article.articleCode IN (
+    SELECT articleCode 
+    FROM Article 
+    WHERE LEN(code) = 15 
+       OR (groupcode1 = ''0590'' AND ud4 <> ''APLIC. DIRETA'')
+)
+ORDER BY breadCrumb
+',
+N'@P0 nvarchar(4000), @P1 nvarchar(4000)',
+N'02_059015000018', N'02_059015000018'
