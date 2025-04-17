@@ -9,4 +9,4 @@ SELECT
     SERVERPROPERTY('InstanceDefaultLogPath') AS CaminhoLogs;
 
 
-SELECT @@VERSION
+SELECT @@VERSION;
